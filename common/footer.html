@@ -1,33 +1,17 @@
 <div class="colophon-top">
   <a name="reserve" id="reserve"></a>
   <section class="reservation" data-aos=" flip-up">
-    <div class="reserve-top">
-      <header>
-        <img src="/../image/ci/ci-horizontal.png" />
-        <small>預約諮詢</small>
-      </header>
-      <div class="desc">
-        <p>
-          透過官網填寫預約表單外，我們同時建議您加入LINE官方帳號，由專人客服提供您諮詢與預約服務。歡迎填寫預約表單並留下您的聯絡方式，我們將有專人與您聯繫確認預約時間。
-        </p>
-        <a class="aicare-button" href="https://lin.ee/jrJI6RD" target="_blank">
-          線上諮詢預約<img
-            class="icon"
-            src="/image/other/line_icon_onbtn.svg"
-            alt="line"
-        /></a>
-      </div>
-    </div>
+    
     <div class="reserve-bottom">
       <header>
         <small>預約表單</small>
       </header>
       <form action="#">
-        <div class="aicare-textfield">
+        <div class="aicare-textfield name">
           <label for="name" class="reuqired">姓名</label>
           <input type="text" id="name" required />
         </div>
-        <div class="aicare-selector">
+        <div class="aicare-selector sex">
           <label for="sex"></label>
           <select>
             <option value="0" selected>性別</option>
@@ -35,7 +19,7 @@
             <option value="2">女</option>
           </select>
         </div>
-        <div class="aicare-textfield">
+        <div class="aicare-textfield phone">
           <label for="phone" class="reuqired">聯絡手機</label>
           <input
             type="text"
@@ -46,7 +30,7 @@
             required
           />
         </div>
-        <div class="aicare-selector">
+        <div class="aicare-selector city">
           <label for="reserve-city"></label>
           <select id="reserve-city" required>
             <option value="0" selected>地區</option>
@@ -55,7 +39,7 @@
             <option value="3">台中分院</option>
           </select>
         </div>
-        <div class="aicare-selector">
+        <div class="aicare-selector branch">
           <label for="reserve"></label>
           <select id="reserve" required>
             <option value="13">萬芳分院</option>
@@ -75,7 +59,7 @@
           </select>
         </div>
         <!-- 病痛checkbox -->
-        <div class="symptom-checkbox">
+        <div class="symptom-checkbox part">
           <label for="reserve">疼痛部位</label>
           <div class="aicare-checkbox">
             <input type="checkbox" id="symptom1" />
@@ -98,7 +82,7 @@
             <label for="symptom9">其他</label>
           </div>
         </div>
-        <div class="aicare-selector">
+        <div class="aicare-selector time">
           <label for="contact"></label>
           <select id="contact" required>
             <option value="0" selected>可聯絡的時間</option>
@@ -107,7 +91,7 @@
             <option value="3">18:00 ~ 21:00</option>
           </select>
         </div>
-        <div class="aicare-selector">
+        <div class="aicare-selector visited">
           <label for="contact"></label>
           <select id="contact" required>
             <option value="0" selected>是否已來過生生優動治療</option>
@@ -115,21 +99,22 @@
             <option value="2">否</option>
           </select>
         </div>
-        <div class="aicare-textfield">
+        <div class="aicare-textfield referrer">
           <label for="recommend">推薦人</label>
           <input type="text" id="recommend" placeholder="非必填" />
         </div>
-        <div class="aicare-checkbox">
+        <div class="aicare-checkbox agree">
           <input type="checkbox" id="agree" />
-          <label for="agree">我已同意</label
-          ><span class="terms">首次諮詢專案價、注意事項及個資告知事項</span>
+          <label for="agree">我已同意
+            <span class="terms">首次諮詢專案價、注意事項及個資告知事項</span>
+          </label>
         </div>
-        <!-- 放檢測機器人 -->
-        <div></div>
+        
         <footer>
           <small>( 提醒您！實際預約需在專人聯繫確認後，才算完成喔！)</small>
           <button type="button" class="aicare-button">確認送出</button>
         </footer>
+        
       </form>
     </div>
   </section>
@@ -179,4 +164,11 @@
     </div>
   </section>
 </div>
-<small class="copyright">生生優動版權所有 © All Rights Reserved.</small>
+<div class="copyright-box">
+  <small class="copyright">生生優動版權所有 © All Rights Reserved.</small>
+  <div class="recaptcha-box">
+    <small>本網站使用!#$#%^$&%</small>
+    <a href="">隱私權</a><a href="">隱私權</a>
+  </div>
+</div>
+
