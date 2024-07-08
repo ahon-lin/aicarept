@@ -1,0 +1,149 @@
+.single-page {
+  padding-top: 70px;
+  max-width: 960px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  @include flexbox(column, center, center);
+  img {
+    height: auto;
+  }
+  .container-5 {
+    position: relative;
+    width: 100%;
+    button {
+      position: absolute;
+      left: 50%;
+      top: 62%;
+      transform: translate(-50%, 0);
+      img {
+        @include for-pad {
+          width: 75%;
+          top: 60%;
+        }
+        @include for-phone {
+          width: 60%;
+        }
+      }
+    }
+    &.treat {
+      margin-bottom: -3px;
+    }
+    .flex-comment {
+      padding: 40px;
+      width: 100%;
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      @include flexbox(column, center, center);
+      gap: 24px;
+      @include for-phone {
+        padding: 20px;
+        gap: 12px;
+      }
+    }
+    .d-a-gif {
+      position: absolute;
+      left: 6.7%;
+      width: 44%;
+      border-radius: 20px;
+      @include for-phone {
+        border-radius: 10px;
+      }
+      &.gif-1 {
+        top: 23.5%;
+      }
+      &.gif-2 {
+        top: 22%;
+      }
+      &.gif-3 {
+        top: 20%;
+      }
+    }
+  }
+  ul.location:first-child {
+    margin: 40px 0 0 0;
+  }
+  ul.location:last-child {
+    margin: 0 0 40px 0;
+    @include for-phone {
+      margin: 20px 0;
+    }
+  }
+  .mtoip-treat {
+    position: relative;
+    .d-a-gif {
+      position: absolute;
+      left: 50%;
+      width: 72%;
+      transform: translate(-50%, 0);
+      border-radius: 20px;
+      @include for-phone {
+        border-radius: 10px;
+      }
+      &.gif-1 {
+        top: 16%;
+      }
+      &.gif-2 {
+        top: 43.5%;
+      }
+      &.gif-3 {
+        top: 71.5%;
+      }
+    }
+  }
+  .mtoip-symptom {
+    position: relative;
+    .d-a-gif {
+      position: absolute;
+      top: 51%;
+      width: 38%;
+      border-radius: 50%;
+      &.gif-1 {
+        left: 8.6%;
+      }
+      &.gif-2 {
+        left: 53.3%;
+      }
+    }
+  }
+  .kneePain-treat {
+    position: relative;
+    .d-a-gif {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 65%;
+      border-radius: 20px;
+      @include for-phone {
+        border-radius: 10px;
+      }
+      &.gif-1 {
+        top: 18.5%;
+      }
+      &.gif-2 {
+        top: 48%;
+      }
+      &.gif-3 {
+        top: 77.4%;
+      }
+    }
+  }
+  .mtoip-fixed-btn {
+    position: fixed;
+    background: url(/../../image/case/mtoip-reservation-fixed-btn.png) center;
+    background-size: contain;
+    border-radius: 100px;
+    width: 45px;
+    height: 158px;
+    right: 16px;
+    bottom: 200px;
+    z-index: 100;
+    @include ease(0.2s);
+
+    &:hover {
+      box-shadow: 0 3px 4px 0px #{"var(--fontColor)"};
+    }
+  }
+}

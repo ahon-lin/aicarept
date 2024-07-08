@@ -1,0 +1,14 @@
+.aicare-button {
+  @include flexbox-gap(row, center, center, 8px);
+  background: var(--orange);
+  color: var(--white);
+  padding: 8px 12px;
+  @include ease(0.2s);
+  &:hover {
+    background: var(--green);
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

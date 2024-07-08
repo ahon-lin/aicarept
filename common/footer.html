@@ -1,0 +1,182 @@
+<div class="colophon-top">
+  <a name="reserve" id="reserve"></a>
+  <section class="reservation" data-aos=" flip-up">
+    <div class="reserve-top">
+      <header>
+        <img src="/../image/ci/ci-horizontal.png" />
+        <small>預約諮詢</small>
+      </header>
+      <div class="desc">
+        <p>
+          透過官網填寫預約表單外，我們同時建議您加入LINE官方帳號，由專人客服提供您諮詢與預約服務。歡迎填寫預約表單並留下您的聯絡方式，我們將有專人與您聯繫確認預約時間。
+        </p>
+        <a class="aicare-button" href="https://lin.ee/jrJI6RD" target="_blank">
+          線上諮詢預約<img
+            class="icon"
+            src="/image/other/line_icon_onbtn.svg"
+            alt="line"
+        /></a>
+      </div>
+    </div>
+    <div class="reserve-bottom">
+      <header>
+        <small>預約表單</small>
+      </header>
+      <form action="#">
+        <div class="aicare-textfield">
+          <label for="name" class="reuqired">姓名</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="aicare-selector">
+          <label for="sex"></label>
+          <select>
+            <option value="0" selected>性別</option>
+            <option value="1">男</option>
+            <option value="2">女</option>
+          </select>
+        </div>
+        <div class="aicare-textfield">
+          <label for="phone" class="reuqired">聯絡手機</label>
+          <input
+            type="text"
+            id="phone"
+            max="10"
+            onkeyup="this.value=this.value.replace(/[^0-9+]+/,'')"
+            pattern="\d*"
+            required
+          />
+        </div>
+        <div class="aicare-selector">
+          <label for="reserve-city"></label>
+          <select id="reserve-city" required>
+            <option value="0" selected>地區</option>
+            <option value="1">台北分院</option>
+            <option value="2">新北分院</option>
+            <option value="3">台中分院</option>
+          </select>
+        </div>
+        <div class="aicare-selector">
+          <label for="reserve"></label>
+          <select id="reserve" required>
+            <option value="13">萬芳分院</option>
+            <option value="12">新莊分院</option>
+            <option value="11">信義分院</option>
+            <option value="10">三重分院</option>
+            <option value="9">古亭分院</option>
+            <option value="8">新店分院</option>
+            <option value="7">林口分院</option>
+            <option value="6">雙和分院</option>
+            <option value="5">板橋分院</option>
+            <option value="4">內湖分院</option>
+            <option value="2">民生分院</option>
+            <option value="3">忠孝新生分院</option>
+            <option value="1">天母分院</option>
+            <option value="0" selected>預約分院</option>
+          </select>
+        </div>
+        <!-- 病痛checkbox -->
+        <div class="symptom-checkbox">
+          <label for="reserve">疼痛部位</label>
+          <div class="aicare-checkbox">
+            <input type="checkbox" id="symptom1" />
+            <label for="symptom1">肩頸痠痛</label>
+            <input type="checkbox" id="symptom2" />
+            <label for="symptom2">下背痛</label>
+            <input type="checkbox" id="symptom3" />
+            <label for="symptom3">膝蓋痛</label>
+            <input type="checkbox" id="symptom4" />
+            <label for="symptom4">手腕痛</label>
+            <input type="checkbox" id="symptom5" />
+            <label for="symptom5">手肘痛</label>
+            <input type="checkbox" id="symptom6" />
+            <label for="symptom6">髖部疼痛（臀部）</label>
+            <input type="checkbox" id="symptom7" />
+            <label for="symptom7">足踝及腳痛</label>
+            <input type="checkbox" id="symptom8" />
+            <label for="symptom8">中風與帕金森氏症</label>
+            <input type="checkbox" id="symptom9" />
+            <label for="symptom9">其他</label>
+          </div>
+        </div>
+        <div class="aicare-selector">
+          <label for="contact"></label>
+          <select id="contact" required>
+            <option value="0" selected>可聯絡的時間</option>
+            <option value="1">09:00 ~ 12:00</option>
+            <option value="2">12:00 ~ 18:00</option>
+            <option value="3">18:00 ~ 21:00</option>
+          </select>
+        </div>
+        <div class="aicare-selector">
+          <label for="contact"></label>
+          <select id="contact" required>
+            <option value="0" selected>是否已來過生生優動治療</option>
+            <option value="1">是</option>
+            <option value="2">否</option>
+          </select>
+        </div>
+        <div class="aicare-textfield">
+          <label for="recommend">推薦人</label>
+          <input type="text" id="recommend" placeholder="非必填" />
+        </div>
+        <div class="aicare-checkbox">
+          <input type="checkbox" id="agree" />
+          <label for="agree">我已同意</label
+          ><span class="terms">首次諮詢專案價、注意事項及個資告知事項</span>
+        </div>
+        <!-- 放檢測機器人 -->
+        <div></div>
+        <footer>
+          <small>( 提醒您！實際預約需在專人聯繫確認後，才算完成喔！)</small>
+          <button type="button" class="aicare-button">確認送出</button>
+        </footer>
+      </form>
+    </div>
+  </section>
+</div>
+<div class="colophon-bottom">
+  <section class="sitemap">
+    <div class="s-menu">
+      <nav>治療服務</nav>
+      <nav>
+        <a href="/prolotherapy.html">增生治療</a>
+      </nav>
+      <nav>
+        <a href="/pt-smarc.html">物理治療</a>
+      </nav>
+      <nav>
+        <a href="/course.html">運動課程</a>
+      </nav>
+    </div>
+
+    <nav>
+      <a href="/team.html">專業團隊</a>
+    </nav>
+    <nav>
+      <a href="/location.html">分院資訊</a>
+    </nav>
+    <nav>
+      <a href="/blog.html">疼痛小百科</a>
+    </nav>
+  </section>
+  <section class="contact">
+    <article class="customer-service">
+      <h4><i class="fa-solid fa-headset icon"></i>客服專線及服務時間</h4>
+      <a href="tel:+886-2-6605-8408">02-6605-8408</a>
+      <div>週一至週五 9:00 am - 6:00 pm</div>
+    </article>
+    <!-- <article class="service-hours">
+                    <h4><i class="fa-solid fa-clock icon"></i>服務時間</h4>
+                    <div>週一至週五 9:00 am - 6:00 pm</div>
+                </article> -->
+    <div class="qrcode">
+      <a href="https://lin.ee/7Vq8Cixf" target="_blank">
+        <img src="/image/other/lineqrcode.svg" />
+      </a>
+      <a href="https://www.facebook.com/AICare.PT" target="_blank">
+        <img src="/image/other/fbqrcode.svg" />
+      </a>
+    </div>
+  </section>
+</div>
+<small class="copyright">生生優動版權所有 © All Rights Reserved.</small>

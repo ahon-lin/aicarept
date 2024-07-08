@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Youdon諮詢回饋</title>
+    <meta property="og:title" content="Youdon諮詢回饋" />
+    <meta property="og:type" content="website" />
+    <meta itemprop="name" content="Youdon諮詢回饋">
+    <meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover">
+
+    <!-- 主畫面樣式 -->
+    <link rel="stylesheet" href="css/youdon.css">
+</head>
+
+<body>
+    <div class="feedback">
+        <h1>
+            諮詢回饋
+        </h1>
+        <div class="surface">
+            <section class="scroll-section">
+            <p class="desc">
+                喜歡這次的諮詢嗎？<br>
+                為這次的諮詢評分吧
+            </p>
+                <section class="rating">
+                    <h2>滿意度</h2>
+                    <div class="rate" id="rate-1">
+                        <input type="radio" id="star1-5" name="rate1" value="5" />
+                        <label for="star1-5" title="text"></label>
+                        <input type="radio" id="star1-4" name="rate1" value="4" />
+                        <label for="star1-4" title="text"></label>
+                        <input type="radio" id="star1-3" name="rate1" value="3" />
+                        <label for="star1-3" title="text"></label>
+                        <input type="radio" id="star1-2" name="rate1" value="2" />
+                        <label for="star1-2" title="text"></label>
+                        <input type="radio" id="star1-1" name="rate1" value="1" />
+                        <label for="star1-1" title="text"></label>
+                      </div>
+                </section>
+                <section class="rating">
+                    <h2>連線品質</h2>
+                    <div class="rate" id="rate-2">
+                        <input type="radio" id="star2-5" name="rate2" value="5" />
+                        <label for="star2-5" title="text"></label>
+                        <input type="radio" id="star2-4" name="rate2" value="4" />
+                        <label for="star2-4" title="text"></label>
+                        <input type="radio" id="star2-3" name="rate2" value="3" />
+                        <label for="star2-3" title="text"></label>
+                        <input type="radio" id="star2-2" name="rate2" value="2" />
+                        <label for="star2-2" title="text"></label>
+                        <input type="radio" id="star2-1" name="rate2" value="1" />
+                        <label for="star2-1" title="text"></label>
+                      </div>
+                </section>
+                <textarea name="mytext" rows="5" cols="40" placeholder="填寫回饋"></textarea>
+            </section>
+            <section class="bottom-section">
+                <button class="tertiary-btn">送出</button>
+            </section>
+        </div>
+    </div>
+</body>
+<!-- <script src="jquery-3.6.4.min.js"></script>
+<script>
+    $('textarea').on('focus', function() {
+  $(window).scrollTop(this.getBoundingClientRect().top - 10);
+});
+</script> -->
+</html>

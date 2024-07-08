@@ -1,0 +1,390 @@
+.colophon {
+  display: grid;
+  gap: 16px;
+  // background: var(--lightGrayf3);
+  background: url(/../../image/bg/colophon-top-bg.jpg) top no-repeat;
+  background-size: cover;
+  @include for-phone {
+    background: url(/../../image/bg/colophon-top-bg-m.jpg) top no-repeat;
+    background-size: cover;
+  }
+
+  & a {
+    color: var(--fontColor);
+    @include ease(0.2s);
+
+    &:hover {
+      color: var(--orange);
+    }
+    &.aicare-button {
+      color: var(--white);
+      border-radius: 50px;
+      background-color: var(--lineColor);
+    }
+  }
+
+  &-top {
+    gap: 48px;
+    flex-wrap: wrap;
+    @include flexbox(row, center, center);
+    border-bottom: 1px solid var(--lightGraycc);
+    padding-bottom: 20px;
+    padding-top: 44px;
+
+    @include for-largepad {
+      padding-bottom: 15%;
+      gap: 0;
+    }
+
+    @include for-pro-10-p {
+      flex-direction: column;
+    }
+    @include for-phone {
+      padding-bottom: 5%;
+    }
+
+    .facebook-fan-group {
+      // flex: 1;
+      // min-width: 500px;
+      // min-height: 832px;
+      padding: 0 50px;
+      // border-right: 1px solid var(--lightGraycc);
+
+      @include for-largepad {
+        padding: 0 25px;
+      }
+      @include for-pro-10-p {
+        align-self: center;
+        border: none;
+      }
+
+      @include for-phone {
+        flex: 1;
+        padding: 0 25px;
+        min-width: 350px;
+      }
+
+      & > iframe {
+        width: 100%;
+        height: 100%;
+
+        &[data-testid="newsFeedStream"] {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .reservation {
+      flex: 1;
+      @include flexbox-gap(row, center, center, 60px);
+      height: 100%;
+      max-width: 1200px;
+
+      @include for-largepad {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 25px;
+        max-width: 100%;
+      }
+
+      header {
+        display: grid;
+        gap: 3px;
+        border-bottom: 2px solid var(--orange);
+        place-items: center;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+
+        & > img {
+          width: 180px;
+          height: auto;
+          margin-bottom: 4px;
+        }
+        & > small {
+          font-size: 1.5rem;
+          color: var(--orange);
+        }
+      }
+
+      .reserve-top {
+        width: 100%;
+
+        .desc {
+          padding: 0 16px 48px 16px;
+          @include flexbox-gap(column, center, center, 24px);
+          p {
+            line-height: 2;
+            text-align: center;
+          }
+        }
+      }
+
+      .reserve-bottom {
+        width: 100%;
+        form {
+          display: grid;
+          gap: 16px;
+          grid-template-columns: auto;
+          margin-bottom: 24px;
+          color: var(--fontColor);
+          padding: 16px;
+          @include for-phone {
+            padding: 16px 4px;
+          }
+
+          & > footer {
+            display: grid;
+            place-items: center;
+            gap: 6px;
+
+            & > small {
+              color: var(--blue);
+              font-size: 1rem;
+              text-align: center;
+              line-height: 1.25;
+            }
+          }
+
+          .aicare-checkbox {
+            width: fit-content;
+          }
+          label[for="agree"] {
+            @include for-phone {
+              font-size: 0.875rem;
+            }
+          }
+
+          small {
+            margin-bottom: 20px;
+            font-weight: 500;
+          }
+          // 9種疼痛位置checkbox
+          .symptom-checkbox {
+            & > label {
+              font-size: 1rem;
+              position: relative;
+              padding-left: 20px;
+              &::before {
+                position: absolute;
+                content: "*";
+                width: 4px;
+                height: 4px;
+                color: var(--orange);
+                top: 4px;
+                left: 11px;
+              }
+            }
+            .aicare-checkbox {
+              padding-top: 8px;
+              padding-left: 20px;
+              width: 100%;
+              @include grid(row, repeat(3, 1fr), auto, start, 12px);
+              @include for-largepad {
+                grid-template-columns: repeat(2, 1fr);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    @include for-pro-10-p {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sitemap {
+      flex: 1;
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-right: 1px solid var(--lightGraycc);
+      padding: 0 50px;
+
+      @include for-pro-12-p {
+        justify-content: flex-start;
+        border-right: none;
+        padding-right: 0px;
+        gap: 16px;
+      }
+      @include for-pad {
+        margin-bottom: 48px;
+        padding: 0;
+        gap: 24px;
+      }
+
+      @include for-phone {
+        @include grid(row, repeat(4, 1fr), auto, unset, 8px);
+        padding: 0 20px;
+        width: 100%;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      nav {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(16px, max-content));
+        gap: 8px;
+      }
+      .s-menu {
+        nav {
+          font-weight: 300;
+          a {
+            font-weight: 500;
+          }
+        }
+        @include flexbox(column, start, start);
+        gap: 8px;
+        @include for-phone {
+          nav {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .contact {
+      flex: 1;
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0 50px;
+
+      @include for-pro-12-p {
+        justify-content: flex-start;
+      }
+
+      @include for-pad {
+        padding: 8px 20px 0 20px;
+        justify-content: center;
+      }
+
+      .customer-service,
+      .service-hours {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(16px, max-content));
+        gap: 8px;
+
+        & > h4 {
+          @include flexbox-gap(row, center, flex-start, 6px);
+          @include for-pad {
+            justify-content: start;
+          }
+          @include for-phone {
+            justify-content: center;
+          }
+        }
+        @include for-phone {
+          text-align: center;
+        }
+      }
+
+      .qrcode {
+        @include flexbox-gap(row, center, flex-start, 8px);
+
+        @include for-phone {
+          justify-content: center;
+          width: 100%;
+        }
+
+        & > a {
+          @include ease(0.2s);
+
+          &:hover {
+            @include scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background: var(--orange);
+    padding: 12px;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+  }
+}
+
+.scrollTop {
+  position: fixed;
+  border-radius: 50%;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  backdrop-filter: blur(5px);
+  width: 45px;
+  height: 45px;
+  right: 16px;
+  bottom: 88px;
+  z-index: 100;
+  @include ease(0.2s);
+
+  &:hover {
+    box-shadow: 0 3px 4px 0px var(--boxShadow);
+    filter: brightness(1.1);
+  }
+}
+
+.line-fixed,
+.reversation-fixed,
+.phone-fixed {
+  position: fixed;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  right: 16px;
+  z-index: 100;
+  @include ease(0.2s);
+
+  &:hover {
+    box-shadow: 0 3px 4px 0px var(--boxShadow);
+    filter: brightness(1.1);
+  }
+  a {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.line-fixed {
+  background: url(/../../image/other/line-s.svg) center no-repeat;
+  background-size: contain;
+  bottom: 325px;
+  height: 220px;
+  border-radius: 100px;
+}
+
+.reversation-fixed {
+  // background: url(/../../image/other/messenger.svg) center;
+  background: var(--orange-gradient);
+  color: var(--white);
+  bottom: 200px;
+  background-size: cover;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  @include flexbox(row, center, center);
+  height: fit-content;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  padding: 16px 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.phone-fixed {
+  background: url(/../../image/other/phone-icon.svg) center;
+  bottom: 144px;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}

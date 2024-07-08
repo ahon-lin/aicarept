@@ -1,0 +1,304 @@
+.physiotherapy{
+  margin-top: 70px;
+  line-height: 1.5;
+
+  
+  .treat-pt-show{
+    margin-top: 4px;
+    height: 92vh;
+    border-bottom: 1px solid var(--border);
+    @include for-largepad{
+      height: unset;
+    }
+
+    .cover{
+      @include grid(row,repeat(2,1fr),auto,unset,0);
+      width: 100%;
+      height: 100%;
+      @include for-largepad{
+        @include flexbox(column,center,start);
+        @include mac-scrollbar-style;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex-direction: column-reverse;
+      }
+      // &.cover0{
+      //   background:url("../../image/bg/website-treat-pt0.jpg") no-repeat fixed center;
+      //   background-size: cover;
+      // }
+      // &.cover1{
+      //   background:url("../../image/bg/website-treat-pt1.jpg") no-repeat fixed center;
+      //   background-size: cover;
+      // }
+      // &.cover2{
+      //   background:url("../../image/bg/website-treat-pt2.jpg") no-repeat fixed center;
+      //   background-size: cover;
+      // }
+      // &.cover3{
+      //   background:url("../../image/bg/website-treat-pt3.jpg") no-repeat fixed center;
+      //   background-size: cover;
+      // }
+      // &.cover4{
+      //   background:url("../../image/bg/website-treat-pt4.jpg") no-repeat fixed center;
+      //   background-size: cover;
+      // }
+      // &.cover5{
+      //   background:url("../../image/bg/website-treat-pt5.jpg") no-repeat fixed center;
+      //   background-size: cover;
+
+      }
+      article{
+        padding: 40px;
+        overflow: auto;
+        // margin: 24px;
+        // border-radius: 5px;
+        // background-color: rgba(256,256,256,0.9);
+        // backdrop-filter: blur(20px);
+        // box-shadow: 0px 15px 40px -15px rgba(0, 0, 0, 0.3);
+        // max-width: 40vw;
+        @include mac-scrollbar-style;
+        background-color: var(--white);
+        color: var(--black);
+
+        @include for-largepad{
+          overflow: unset;
+        }
+        @include for-phone{
+          margin:  20px auto;
+          padding: 16px;
+          
+        }
+        h1{
+          margin-bottom: 16px;
+          width: fit-content;
+          background-color: var(--lightGreen);
+          color: var(--black);
+          padding: 0 8px;
+          letter-spacing: 1px;
+          text-align: justify;
+        }
+        h2{
+          font-size: 1.75rem;
+          line-height: 2rem;
+          letter-spacing: 1.15px;
+          margin: 24px 0;
+          @include for-largepad{
+            line-height: 2rem;
+            margin: 24px 0;
+          }
+        }
+        h3{
+          width: 100%;
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          letter-spacing: 1.15px;
+          margin-bottom: 1rem;
+          border-bottom: 2px solid var(--lightGreen);
+          @include for-largepad{
+            line-height: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 4px;
+            margin-top: 2rem;
+          }
+        }
+        p.text-body{
+          padding-bottom: 24px;
+        }
+        ul{
+          padding: 0px 0;
+          @include flexbox(column,start,start);
+          gap: 8px;
+          width: 100%;
+          margin-bottom: 16px;
+          &.b-list{
+            h3{
+              margin: 24px 0 8px 0;
+            }
+          }
+          &.number-list li{
+            list-style: decimal;
+            list-style-position: inside;
+          }
+          li{
+            width: 100%;
+            font-size: 1.25rem;
+            color: var(--black);
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding-bottom: 2px;
+            
+            div:first-child{
+              background-color: var(--lightGreen);
+              font-weight: 400;
+              padding: 4px;
+              margin-bottom: 4px;
+
+            }
+            .s-list{
+              width: 100%;
+              margin: 4px 0;
+              margin: 8px 0;
+              @include flexbox(column,start,start);
+              border-radius: 4px;
+              gap: 2px;
+              li{
+                list-style:none;
+                font-weight: 400;
+                font-size: 1rem;
+                padding: 8px;
+                margin: 0;
+                width: 100%;
+                background-color: var(--lightGrayf3);
+                color: var(--fontColor);
+              }
+            }
+          }
+        }
+      }
+
+      .cover-inside{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include for-largepad{
+          width: 100vw;
+          min-height: 30vh;
+        }
+
+        &.cover1{
+          background-image:url("/../../image/bg/website-treat-pt0.jpg");
+        }
+        &.cover2{
+          background-image:url("/../../image/bg/website-treat-pt1.jpg");
+        }
+        &.cover3{
+          background-image:url("/../../image/bg/website-treat-pt2.jpg");
+        }
+        &.cover4{
+          background-image:url("/../../image/bg/website-treat-pt3.jpg");
+        }
+        &.cover5{
+          background-image:url("/../../image/bg/website-treat-pt4.jpg");
+        }
+        &.cover6{
+          background-image:url("/../../image/bg/website-treat-pt5.jpg");
+        }
+      }
+    .swiper-slide{
+      overflow-y: auto;
+        @include mac-scrollbar-style;
+        overflow: auto;
+      }
+    }
+
+  .treat-pt{
+    height: fit-content;
+    margin: 80px 40px 80px 40px;
+    @include for-largepad{
+      margin-top: 24px;
+    }
+    @include for-phone{
+      margin-left: 16px;
+      margin-right: 0px;
+    }
+
+    .swiper-slide{
+      display: none;
+      height: 160px;
+      @include flexbox(column,center,center);
+      background-color: var(--black);
+      color: var(--black);
+      cursor: pointer;
+      box-sizing: border-box;
+        @include ease(.05s);
+      @include for-pad{
+        height: 120px;
+      }
+      @include for-phone{
+        height: 100px;
+      }
+      button{
+        color: white;
+        background-color: var(--orange);
+        font-size: 1.5rem;
+        padding: 8px 4px;
+        text-shadow:0px 2px 6px rgba(0, 0, 0, 0.2);
+        @include for-pad{
+          font-size: 1.25rem;
+        }
+      }
+      // SMARC 0
+      &.img-treat-0{
+        background:url("/../../image/treat/pt-0.jpg") no-repeat center;
+        background-size: cover;
+      }
+      // 徒手 1
+      &.img-treat-1{
+        background:url("/../../image/treat/pt-1.jpg") no-repeat center;
+        background-size: cover;
+      }
+      // 運動 2
+      &.img-treat-2{
+        background:url("/../../image/treat/pt-2.jpg") no-repeat center;
+        background-size: cover;
+      }
+      // indiba 3
+      &.img-treat-3{
+        background:url("/../../image/treat/pt-3.jpg") no-repeat center;
+        background-size: cover;
+      }
+      // 震波 4
+      &.img-treat-4{
+        background:url("/../../image/treat/pt-4.jpg") no-repeat center;
+        background-size: cover;
+      }
+      // 高強度磁波 5
+      &.img-treat-5{
+        background:url("/../../image/treat/pt-5.jpg") no-repeat fixed center;
+        background-size: cover;
+      }
+      &:hover{
+        opacity: 1;
+        filter: brightness(103%);
+        @include ease(.05s);
+      }
+    }
+    .swiper-slide-thumb-active {
+      opacity: 1;
+      filter: brightness(100%);
+      border: 2px solid var(--orange);
+    }
+  }
+
+  h2{
+    position: relative;
+    color: var(--black);
+    margin: 80px auto;
+    font-weight: normal;
+    font-size: 2em;
+    width: fit-content;
+    @include for-largepad{
+      line-height: 1.5rem;
+    }
+
+
+    &::after{
+      content: "";
+    position: absolute;
+    background: var(--orange);
+    width: 100%;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    }
+
+    @include for-largepad{
+      font-size: 1.5rem;
+      margin-bottom: 24px;
+    }
+    @include for-phone{
+      font-size: 1.125rem;
+      margin-bottom: 12px;
+    }
+  }
+  }

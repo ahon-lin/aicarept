@@ -1,0 +1,57 @@
+.popup {
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.68);
+  align-items: center;
+  justify-content: center;
+  &-content {
+    width: 600px;
+    padding: 40px 0;
+    border-radius: 8px;
+    background-color: var(--white);
+    margin-bottom: 16px;
+    text-align: center;
+    h3 {
+      letter-spacing: 0.25px;
+    }
+    article {
+      text-align: justify;
+      font-size: 1rem;
+      margin: 16px 0;
+      letter-spacing: 0.25px;
+      padding: 0 40px;
+      max-height: 360px;
+      overflow: auto;
+      @include mac-scrollbar-style;
+    }
+    .close-btn {
+      background-color: var(--orange);
+      padding: 8px 24px;
+      color: var(--white);
+    }
+    @include for-phone {
+      width: 100%;
+      margin: 20px;
+    }
+  }
+}
+
+.popup.show {
+  display: flex;
+  @include ease(0.2s);
+}
+.terms {
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    color: var(--orange);
+    @include ease(0.2s);
+  }
+  @include for-phone {
+    font-size: 0.875rem;
+  }
+}

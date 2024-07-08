@@ -1,0 +1,399 @@
+.team-member {
+  margin-top: 60px;
+  padding-top: 40px;
+  color: var(--black);
+  @include flexbox(column, center, start);
+  @include for-phone {
+    padding-top: 16px;
+  }
+  // tab開始
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 12px;
+    row-gap: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    @include for-phone {
+      row-gap: 12px;
+    }
+    & input[type="radio"] {
+      display: none;
+    }
+    & > input[type="radio"]:checked + label {
+      // color: var(--white);
+      color: var(--orange);
+      border-color: var(--orange);
+      // background-color: var(--orange);
+      &:hover {
+        filter: saturate(1);
+      }
+    }
+    & > input[type="radio"]:checked + label + .tab-content {
+      display: block;
+      margin-top: 2rem;
+    }
+    & > label {
+      color: var(--fontColor);
+      padding: 16px 32px;
+      border: 2px solid var(--lightGrayf3);
+      font-size: 1.75rem;
+      font-weight: 500;
+      border-radius: 5px;
+      cursor: pointer;
+      order: 0;
+      @include ease(0.2s);
+    }
+    & > label:hover {
+      border-color: var(--orange);
+    }
+    & > .tab-content {
+      display: none;
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  // tab結束
+
+  h1 {
+    position: relative;
+    color: var(--black);
+    margin: 40px auto 64px auto;
+    &::after {
+      content: "";
+      position: absolute;
+      background: var(--orange);
+      width: 100%;
+      height: 3px;
+      bottom: -10px;
+      left: 0px;
+    }
+  }
+
+  .team-panel {
+    // input[type="radio"] {
+    //   @include s-tabs(1.25rem, "#form-tab", ".panel", "#panel");
+    // }
+    &.tpe {
+      input[type="radio"] {
+        @include s-tabs(1.25rem, "#form-tab-tpe", ".panel-tpe", "#panel-tpe");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
+    &.ntpc {
+      input[type="radio"] {
+        @include s-tabs(
+          1.25rem,
+          "#form-tab-ntpc",
+          ".panel-ntpc",
+          "#panel-ntpc"
+        );
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
+    &.tyn {
+      input[type="radio"] {
+        @include s-tabs(1.25rem, "#form-tab-tyn", ".panel-tyn", "#panel-tyn");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
+    &.txg {
+      input[type="radio"] {
+        @include s-tabs(1.25rem, "#form-tab-txg", ".panel-txg", "#panel-txg");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
+    width: 100%;
+    @include flexbox(row, center, center);
+    gap: 16px;
+    // @include grid(row, repeat(5, 1fr), auto, inherit, 16px);
+    flex-wrap: wrap;
+    @include for-phone {
+      input[type="radio"] + label {
+        width: 28%;
+      }
+    }
+    & > input[type="radio"] + label {
+      border: 2px solid var(--lightGrayf3);
+      color: var(--fontColor);
+      background-color: unset;
+    }
+    & > input[type="radio"]:checked + label {
+      border-color: var(--orange);
+      color: var(--orange) !important;
+    }
+    .panel {
+      width: 100vw;
+      height: fit-content;
+      position: relative;
+      overflow-x: hidden;
+      grid-column: 1/6;
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--fontColor);
+        top: 60%;
+        @include for-phone {
+          top: 30%;
+        }
+      }
+
+      &-table {
+        display: none;
+        width: 100%;
+        @include ease(0.2s);
+
+        .group {
+          width: 100%;
+          gap: 16px;
+          padding: 16px 0;
+          margin-top: 20px;
+          .swiper-wrapper {
+            width: fit-content;
+          }
+          .person {
+            @include flexbox(column, center, center);
+            padding: 8px 16px;
+            gap: 4px;
+            cursor: pointer;
+            img,
+            .no-img {
+              border-radius: 50%;
+              border: none;
+              background-color: var(--lightGrayf9);
+              width: 60px;
+              height: 60px;
+              margin-bottom: 4px;
+            }
+            .name {
+              font-weight: 400;
+              letter-spacing: 0.5px;
+              font-size: 1.125rem;
+              color: var(--fontColor);
+            }
+            .title {
+              font-size: 1rem;
+              color: var(--fontColor);
+              font-weight: 300;
+            }
+          }
+        }
+        .group-at,
+        .group-pt,
+        .group-clinic {
+          .swiper-slide-thumb-active img,
+          .swiper-slide-thumb-active .no-img {
+            outline: 2px solid var(--orange);
+          }
+        }
+        .swipe {
+          width: 100%;
+          .swiper-pagination {
+            color: var(--fontColor);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: unset;
+            height: 0px;
+          }
+          .swiper-wrapper {
+            width: 100vw;
+          }
+          .swiper-slide {
+            background: linear-gradient(
+              225deg,
+              #e3e8eb 0%,
+              #e3e8eb 20%,
+              #d2dadd 35%
+            );
+            padding: 0 100px;
+            height: 520px;
+            @include flexbox(row, end, center);
+            @include for-pad {
+              padding: 0px;
+              height: 40vh;
+            }
+            @include for-phone {
+              @include flexbox(column, center, center);
+              height: fit-content;
+            }
+
+            .wording {
+              width: 50%;
+              height: 100%;
+              padding: 40px 0 16px 0;
+              @include for-pad {
+                padding: 32px 0;
+                width: 40%;
+              }
+              @include for-phone {
+                width: 100%;
+                padding: 32px 24px 16px 24px;
+                border-top: 1px solid var(--border);
+              }
+              .big {
+                margin-bottom: 40px;
+                @include for-pad {
+                  margin-bottom: 24px;
+                }
+                h2 {
+                  font-size: 2.5rem;
+                  margin-bottom: 8px;
+                  span {
+                    font-size: 2rem;
+                    @include for-phone {
+                      display: block;
+                      font-size: 1.75rem;
+                      margin: 8px 0 4px 0;
+                    }
+                  }
+                }
+                .title {
+                  font-size: 1.25rem;
+                  color: var(--fontColor);
+                  letter-spacing: 0.5px;
+                }
+              }
+              .small {
+                @include grid(row, 1fr 1fr, 1fr 1fr, unset, 32px);
+                @include mac-scrollbar-style;
+                height: 70%;
+                overflow: auto;
+                @include for-largepad {
+                  @include grid(row, 1fr, repeat(4, auto), unset, 32px);
+                }
+                @include for-phone {
+                  height: fit-content;
+                  max-height: 50vh;
+                }
+                .item {
+                  h3 {
+                    font-size: 1.75rem;
+                    margin-bottom: 12px;
+                  }
+                  ul {
+                    font-size: 1.125rem;
+                    letter-spacing: 0.5px;
+                    line-height: 1.15;
+                    font-weight: 300;
+                    color: var(--fontColor);
+                    @include flexbox(column, start, start);
+                    gap: 8px;
+                    li {
+                      color: var(--fontColor);
+                    }
+                    a {
+                      color: var(--black);
+                      border-bottom: 1px solid var(--fontColor);
+                    }
+                  }
+                }
+              }
+            }
+            img,
+            .no-img {
+              height: max-content;
+              max-width: 50vw;
+              width: fit-content;
+
+              @include for-pad {
+                height: 100%;
+                width: fit-content;
+              }
+              @include for-phone {
+                width: 100%;
+                height: 100vw;
+                max-width: unset;
+              }
+            }
+          }
+        }
+        &:last-child {
+          .wrapper {
+            width: 100%;
+            background: linear-gradient(
+              225deg,
+              #e3e8eb 0%,
+              #e3e8eb 20%,
+              #d2dadd 35%
+            );
+            padding: 0 100px;
+            height: 520px;
+            @include flexbox(row, end, center);
+            @include for-phone {
+              @include flexbox(column, center, center);
+              height: fit-content;
+              padding: 0;
+            }
+
+            img {
+              height: max-content;
+              max-width: 50vw;
+              width: fit-content;
+              @include for-phone {
+                width: 100%;
+                height: 100vw;
+                max-width: unset;
+              }
+            }
+            .wording {
+              width: 50%;
+              height: 100%;
+              padding: 40px 0 16px 0;
+              @include for-pad {
+                padding: 32px 0;
+                width: 40%;
+              }
+              @include for-phone {
+                width: 100%;
+                padding: 32px 24px 16px 24px;
+                border-top: 1px solid var(--border);
+              }
+              h2 {
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+              }
+              .title {
+                font-size: 1.25rem;
+                color: var(--fontColor);
+                letter-spacing: 0.5px;
+                @include mac-scrollbar-style;
+                height: 70%;
+                overflow: auto;
+
+                @include for-phone {
+                  width: 100%;
+                  padding: 0;
+                  border-top: 1px solid var(--border);
+                }
+
+                p {
+                  margin-bottom: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
