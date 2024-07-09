@@ -8958,6 +8958,3 @@ section.facility {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.grecaptcha-badge { 
-  visibility: hidden;
-}
