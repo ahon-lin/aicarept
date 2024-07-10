@@ -3053,7 +3053,7 @@ p.note {
   border-radius: 50%;
   color: var(--orange);
   border: 1px solid var(--orange);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0px);
   width: 45px;
   height: 45px;
   right: 16px;
@@ -3688,11 +3688,75 @@ p.note {
   border: 1px solid var(--lineColor);
   color: var(--lineColor);
 }
-
+.share-container{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.share-container.mobile-mode{
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+.share-container.mobile-mode .share{
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  order: 2;
+  border-top: 0px solid var(--lightGreen);
+  border-bottom: 0px solid var(--lightGreen);
+  padding: 0  0 0 1rem;
+  
+}
+.share-container.mobile-mode .share .fa-line,
+.share-container.mobile-mode .share .fa-facebook{
+  display: none;
+}
+.share-container.mobile-mode .share .mobile_share{
+  margin: 0;
+  border: 0;
+  font-size: 1.25rem;
+  padding: .75rem .75rem .75rem .5rem;
+}
 .link-text {
   margin-top: 20px;
 }
-
+.share-container.mobile-mode .link-text{
+  margin-top: 0px;
+  padding-right: 1rem;
+  border-right: 1px solid var(--fontColor);
+}
 .locationContainer {
   padding: 100px 100px 40px 100px;
   max-width: 1400px;
