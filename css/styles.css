@@ -3162,7 +3162,10 @@ p.note {
     right: auto;
     left: auto;
     width: 50%;
+    /* 
     height: fit-content;
+    */
+    height: auto;
     border-radius: 0px;
     grid-template-columns: max-content 32px;
     grid-template-rows: 1fr;
