@@ -3076,13 +3076,23 @@ p.note {
   position: fixed;
   border-radius: 50%;
   width: 45px;
-  height: 60px;
   right: 16px;
   z-index: 100;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 3.2px 2.4px 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+  bottom: 325px;
+  height: fit-content;
+  border-radius: 100px;
+  padding: 24px 0;
 }
 
 .line-fixed{
@@ -3107,17 +3117,7 @@ p.note {
 
 .line-fixed,
 .reversation-fixed {
-  box-shadow: rgba(0, 0, 0, 0.35) 3.2px 2.4px 4px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 4px;
-  align-items: center;
-  justify-items: center;
-  bottom: 325px;
-  height: fit-content;
-  border-radius: 100px;
-  padding: 24px 0;
+  
 }
 .line-fixed .img-container{
   width: 28px;
@@ -3162,10 +3162,7 @@ p.note {
     right: auto;
     left: auto;
     width: 50%;
-    /* 
-    height: fit-content;
-    */
-    height: auto;
+    height: 60px;
     border-radius: 0px;
     grid-template-columns: max-content 32px;
     grid-template-rows: 1fr;
