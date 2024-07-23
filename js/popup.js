@@ -16,4 +16,6 @@ $(document).ready(function() {
     $('.close-btn').click(function() {
       $('.popup').css('display', 'none');
     });
+    var observer = lozad('.lozad')
+    observer.observe()
   });
