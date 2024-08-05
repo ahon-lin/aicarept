@@ -26,10 +26,11 @@
   &-top {
     gap: 48px;
     flex-wrap: wrap;
-    @include flexbox(row, center, center);
+    @include flexbox(column, center, center);
     border-bottom: 1px solid var(--lightGraycc);
     padding-bottom: 20px;
     padding-top: 44px;
+    margin: auto;
 
     @include for-largepad {
       padding-bottom: 15%;
@@ -78,7 +79,7 @@
       flex: 1;
       @include flexbox-gap(row, center, center, 60px);
       height: 100%;
-      max-width: 1200px;
+      max-width: 800px;
 
       @include for-largepad {
         flex-direction: column;
@@ -128,6 +129,8 @@
           margin-bottom: 24px;
           color: var(--fontColor);
           padding: 16px;
+          max-width: 800px;
+          margin: auto;
           @include for-phone {
             padding: 16px 4px;
           }
@@ -307,12 +310,18 @@
     }
   }
 
-  .copyright {
+  .copyright-box {
     background: var(--orange);
     padding: 12px;
     text-align: center;
     color: var(--white);
     letter-spacing: 0.1rem;
+    @include for-phone {
+      margin-bottom: 88px;
+    }
+    a {
+      color: var(--white);
+    }
   }
 }
 
@@ -339,7 +348,10 @@
 .reversation-fixed,
 .phone-fixed {
   position: fixed;
+  font-size: 1.25rem;
+  font-weight: 500;
   border-radius: 50%;
+  letter-spacing: 2px;
   width: 45px;
   height: 45px;
   right: 16px;
@@ -359,11 +371,34 @@
 }
 
 .line-fixed {
-  background: url(/../../image/other/line-s.svg) center no-repeat;
-  background-size: contain;
-  bottom: 325px;
-  height: 220px;
+  background: linear-gradient(
+    160deg,
+    #86d97f 4.76%,
+    #4ab043 34.6%,
+    #148116 80.45%
+  );
+  color: var(--white);
+  @include flexbox-gap(row, center, center, 8px);
+  writing-mode: vertical-lr;
+  word-break: keep-all;
+  bottom: 350px;
   border-radius: 100px;
+  height: auto;
+  padding: 16px 8px;
+  @include for-phone {
+    writing-mode: unset;
+    width: inherit;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    height: auto;
+  }
+  .img-container {
+    width: 100%;
+    @include for-phone {
+      width: 24px;
+    }
+  }
 }
 
 .reversation-fixed {
@@ -381,6 +416,9 @@
   padding: 16px 0;
   font-weight: 500;
   letter-spacing: 1.5px;
+  @include for-phone {
+    display: none;
+  }
 }
 .phone-fixed {
   background: url(/../../image/other/phone-icon.svg) center;
