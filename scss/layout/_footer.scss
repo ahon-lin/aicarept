@@ -435,17 +435,8 @@
 // 掛件CSS
 #eight-chat-container{
   .rightContent{
-    width:60px;
-    height: 60px;
-    right: 16px;
-    bottom: 136px;
+    transform: scale(.75);
+    right: 0px;
+    bottom: 128px;
   }
-}
-.jss3{
-  right: 0px !important;
-}
-img.jss4{
-  width: 45px !important; //蓋掉JS
-  height: 45px !important;
-  margin-right: -10px;
 }

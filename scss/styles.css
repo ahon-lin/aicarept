@@ -2579,20 +2579,9 @@ p.note {
 }
 
 #eight-chat-container .rightContent {
-  width: 60px;
-  height: 60px;
-  right: 16px;
-  bottom: 136px;
-}
-
-.jss3 {
-  right: 0px !important;
-}
-
-img.jss4 {
-  width: 45px !important;
-  height: 45px !important;
-  margin-right: -10px;
+  transform: scale(0.75);
+  right: 0px;
+  bottom: 128px;
 }
 
 .blog {
