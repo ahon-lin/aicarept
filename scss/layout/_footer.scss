@@ -369,7 +369,9 @@
     height: 100%;
   }
 }
-
+.phone-fixed{
+  display: none;
+}
 .line-fixed {
   background: linear-gradient(
     160deg,
@@ -428,4 +430,21 @@
 }
 .grecaptcha-badge { 
   visibility: hidden;
+}
+
+// 掛件CSS
+#eight-chat-container{
+  .rightContent{
+    width:60px;
+    height: 60px;
+    right: 16px;
+    bottom: 136px;
+    .jss3{
+      right: 0px !important;
+    }
+    .jss4{
+      width: 45px !important; //蓋掉JS
+      height: 45px !important;
+    }
+  }
 }
