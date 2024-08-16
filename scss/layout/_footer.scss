@@ -439,12 +439,13 @@
     height: 60px;
     right: 16px;
     bottom: 136px;
-    .jss3{
-      right: 0px !important;
-    }
-    .jss4{
-      width: 45px !important; //蓋掉JS
-      height: 45px !important;
-    }
   }
+}
+.jss3{
+  right: 0px !important;
+}
+img.jss4{
+  width: 45px !important; //蓋掉JS
+  height: 45px !important;
+  margin-right: -10px;
 }

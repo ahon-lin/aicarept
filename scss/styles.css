@@ -2584,12 +2584,15 @@ p.note {
   right: 16px;
   bottom: 136px;
 }
-#eight-chat-container .rightContent .jss3 {
+
+.jss3 {
   right: 0px !important;
 }
-#eight-chat-container .rightContent .jss4 {
+
+img.jss4 {
   width: 45px !important;
   height: 45px !important;
+  margin-right: -10px;
 }
 
 .blog {
