@@ -2572,16 +2572,11 @@ p.note {
   background-size: cover;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  display: none;
 }
 
 .grecaptcha-badge {
   visibility: hidden;
-}
-
-#eight-chat-container .rightContent {
-  transform: scale(0.75);
-  right: 0px;
-  bottom: 128px;
 }
 
 .blog {

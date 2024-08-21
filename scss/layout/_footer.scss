@@ -427,16 +427,17 @@
   bottom: 144px;
   background-size: cover;
   backdrop-filter: blur(5px);
+  display: none;
 }
 .grecaptcha-badge { 
   visibility: hidden;
 }
 
 // 掛件CSS
-#eight-chat-container{
-  .rightContent{
-    transform: scale(.75);
-    right: 0px;
-    bottom: 128px;
-  }
-}
+// #eight-chat-container{
+//   .rightContent{
+//     transform: scale(.75);
+//     right: 0px;
+//     bottom: 128px;
+//   }
+// }
