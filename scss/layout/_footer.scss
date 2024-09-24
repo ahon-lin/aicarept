@@ -369,7 +369,7 @@
     height: 100%;
   }
 }
-.phone-fixed{
+.phone-fixed {
   display: none;
 }
 .line-fixed {
@@ -389,7 +389,7 @@
   padding: 16px 8px;
   @include for-phone {
     writing-mode: unset;
-    width: inherit;
+    width: auto;
     bottom: 16px;
     left: 16px;
     right: 16px;
@@ -429,7 +429,7 @@
   backdrop-filter: blur(5px);
   display: none;
 }
-.grecaptcha-badge { 
+.grecaptcha-badge {
   visibility: hidden;
 }
 
