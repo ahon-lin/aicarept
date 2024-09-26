@@ -3622,7 +3622,7 @@ p.note {
 
 @media (max-width: 480px) {
   .articleContainer p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -3738,6 +3738,10 @@ p.note {
   font-size: 1.125rem;
 }
 
+.articleContainer .reservation-btn {
+  color: var(--orange);
+}
+
 .share {
   display: -webkit-flex;
   display: -moz-flex;
@@ -3816,7 +3820,6 @@ mark {
 }
 
 .c-info p {
-  padding: unset;
   background-color: var(--lightGreen-container);
   padding: 4px 16px;
   width: fit-content;
