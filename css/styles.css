@@ -3248,6 +3248,7 @@ p.note {
 }
 
 .articleContainer {
+  overflow-x: hidden;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -3276,7 +3277,7 @@ p.note {
 
 @media (max-width: 480px) {
   .articleContainer {
-    padding: 0 0 72px 0;
+    padding: 0 16px 72px 16px;
   }
 }
 
@@ -3589,14 +3590,12 @@ p.note {
 
 .articleContainer h2 {
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 2.5rem;
   width: 100%;
   letter-spacing: 1.15px;
   margin: 48px 0 24px 0;
   padding-bottom: 8px;
-  text-align: center;
-  border-bottom: 2px solid var(--lightGreen);
 }
 
 @media (max-width: 480px) {
@@ -3611,7 +3610,7 @@ p.note {
   font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: 1.15px;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .articleContainer p.note {
@@ -3762,8 +3761,14 @@ p.note {
   justify-content: center;
   border-top: 4px solid var(--lightGreen);
   border-bottom: 4px solid var(--lightGreen);
-  padding: 40px 0;
+  padding: 24px 0;
   color: var(--fontColor);
+}
+
+@media (max-width: 480px) {
+  .share {
+    padding: 16px 0;
+  }
 }
 
 .share .shareList a {
@@ -3802,6 +3807,7 @@ mark {
   color: var(--orange);
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 0.5;
 }
 
 .c-info {
@@ -3845,6 +3851,21 @@ a.yo-link:hover {
   a.yo-link {
     font-size: 1rem;
   }
+}
+
+.yt-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.yt-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .locationContainer {
