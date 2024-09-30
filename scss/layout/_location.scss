@@ -54,7 +54,10 @@ h2.city-title {
 }
 
 .ar-group {
-  @include flexbox-gap(row, center, center, 12px);
+  @include flexbox-gap(row, center, center, 16px);
+  @include for-desktop {
+    @include grid(row, repeat(3, 1fr), auto, normal, 8px);
+  }
   .ar-city-btn {
     color: var(--orange);
     padding: 16px 32px;

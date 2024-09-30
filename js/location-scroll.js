@@ -30,3 +30,11 @@ $(".arc-btn4").click(function () {
     "medium"
   );
 });
+$(".arc-btn5").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".ct-5").offset().top,
+    },
+    "medium"
+  );
+});

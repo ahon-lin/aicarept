@@ -293,7 +293,7 @@ function initializeSwipers(clinicClass, memberClass) {
 //   initializeSwipers(`.group-clinic${i}`, `.swiper-member${i}`);
 // }
 
-const locations = ["tpe", "ntpc", "tyn", "txg"];
+const locations = ["tpe", "ntpc", "tyn", "txg", "tnn"];
 
 locations.forEach((location) => {
   for (let i = 1; i <= 18; i++) {

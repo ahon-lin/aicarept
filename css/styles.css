@@ -3962,7 +3962,18 @@ h2.city-title {
   -ms-justify-content: center;
   -o-justify-content: center;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .ar-group {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    place-items: normal;
+    gap: 8px;
+  }
 }
 
 .ar-group .ar-city-btn {
@@ -7443,6 +7454,419 @@ section.facility {
   }
 }
 
+.team-member .team-panel.tnn input[type="radio"] {
+  display: none;
+}
+
+.team-member .team-panel.tnn input[type="radio"]:checked + label {
+  border-color: var(--orange);
+  color: var(--black);
+}
+
+.team-member .team-panel.tnn input[type="radio"] + label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  width: 200px;
+  color: var(--fontColor);
+  cursor: pointer;
+  font-size: 1.25rem;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 16px 4px;
+  border-radius: 100px;
+  border: 2px solid var(--lightGrayf3);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.tnn input[type="radio"] + label {
+    font-size: 1rem;
+  }
+}
+
+.team-member .team-panel.tnn input[type="radio"] + label:hover {
+  border-color: var(--orange);
+  color: var(--black);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn1:checked ~ .panel-tnn #panel-tnn-1 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn2:checked ~ .panel-tnn #panel-tnn-2 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn3:checked ~ .panel-tnn #panel-tnn-3 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn4:checked ~ .panel-tnn #panel-tnn-4 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn5:checked ~ .panel-tnn #panel-tnn-5 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn6:checked ~ .panel-tnn #panel-tnn-6 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn7:checked ~ .panel-tnn #panel-tnn-7 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn8:checked ~ .panel-tnn #panel-tnn-8 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn9:checked ~ .panel-tnn #panel-tnn-9 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn10:checked ~ .panel-tnn #panel-tnn-10 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn11:checked ~ .panel-tnn #panel-tnn-11 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn12:checked ~ .panel-tnn #panel-tnn-12 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn13:checked ~ .panel-tnn #panel-tnn-13 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn14:checked ~ .panel-tnn #panel-tnn-14 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn15:checked ~ .panel-tnn #panel-tnn-15 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn16:checked ~ .panel-tnn #panel-tnn-16 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn17:checked ~ .panel-tnn #panel-tnn-17 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn18:checked ~ .panel-tnn #panel-tnn-18 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn19:checked ~ .panel-tnn #panel-tnn-19 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn20:checked ~ .panel-tnn #panel-tnn-20 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn21:checked ~ .panel-tnn #panel-tnn-21 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn22:checked ~ .panel-tnn #panel-tnn-22 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn23:checked ~ .panel-tnn #panel-tnn-23 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn24:checked ~ .panel-tnn #panel-tnn-24 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn25:checked ~ .panel-tnn #panel-tnn-25 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn26:checked ~ .panel-tnn #panel-tnn-26 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn27:checked ~ .panel-tnn #panel-tnn-27 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn28:checked ~ .panel-tnn #panel-tnn-28 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn29:checked ~ .panel-tnn #panel-tnn-29 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn30:checked ~ .panel-tnn #panel-tnn-30 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn31:checked ~ .panel-tnn #panel-tnn-31 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn32:checked ~ .panel-tnn #panel-tnn-32 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn33:checked ~ .panel-tnn #panel-tnn-33 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn34:checked ~ .panel-tnn #panel-tnn-34 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn35:checked ~ .panel-tnn #panel-tnn-35 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn36:checked ~ .panel-tnn #panel-tnn-36 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn37:checked ~ .panel-tnn #panel-tnn-37 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn38:checked ~ .panel-tnn #panel-tnn-38 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn39:checked ~ .panel-tnn #panel-tnn-39 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn40:checked ~ .panel-tnn #panel-tnn-40 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn41:checked ~ .panel-tnn #panel-tnn-41 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn42:checked ~ .panel-tnn #panel-tnn-42 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn43:checked ~ .panel-tnn #panel-tnn-43 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn44:checked ~ .panel-tnn #panel-tnn-44 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn45:checked ~ .panel-tnn #panel-tnn-45 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn46:checked ~ .panel-tnn #panel-tnn-46 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn47:checked ~ .panel-tnn #panel-tnn-47 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn48:checked ~ .panel-tnn #panel-tnn-48 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn49:checked ~ .panel-tnn #panel-tnn-49 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.tnn input[type="radio"]#form-tab-tnn50:checked ~ .panel-tnn #panel-tnn-50 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.tnn input[type="radio"] + label {
+    width: 28%;
+  }
+}
+
 @media (max-width: 480px) {
   .team-member .team-panel input[type="radio"] + label {
     width: 28%;
@@ -8906,6 +9330,10 @@ section.facility {
   top: 20%;
 }
 
+.single-page .locationContainer {
+  padding: 80px 0 40px 0;
+}
+
 .single-page ul.location:first-child {
   margin: 40px 0 0 0;
 }
@@ -8918,6 +9346,28 @@ section.facility {
   .single-page ul.location:last-child {
     margin: 20px 0;
   }
+}
+
+.single-page ul.location {
+  padding-top: 40px;
+  gap: 0 8px;
+}
+
+.single-page ul.location li {
+  padding: 24px;
+}
+
+.single-page ul.location li .nav {
+  bottom: 16px;
+}
+
+.single-page .city-title {
+  text-align: center;
+  padding-top: 64px;
+}
+
+.single-page #more-location-btn {
+  margin: 24px 0;
 }
 
 .single-page .mtoip-treat {

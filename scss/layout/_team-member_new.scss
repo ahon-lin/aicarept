@@ -121,6 +121,16 @@
         }
       }
     }
+    &.tnn {
+      input[type="radio"] {
+        @include s-tabs(1.25rem, "#form-tab-tnn", ".panel-tnn", "#panel-tnn");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
     width: 100%;
     @include flexbox(row, center, center);
     gap: 16px;

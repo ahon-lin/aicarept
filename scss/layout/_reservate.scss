@@ -62,6 +62,9 @@
       }
     }
   }
+  .locationContainer {
+    padding: 80px 0 40px 0;
+  }
   ul.location:first-child {
     margin: 40px 0 0 0;
   }
@@ -70,6 +73,24 @@
     @include for-phone {
       margin: 20px 0;
     }
+  }
+  ul.location {
+    padding-top: 40px;
+    gap: 0 8px;
+    li {
+      padding: 24px;
+      .nav {
+        bottom: 16px;
+      }
+    }
+  }
+  .city-title {
+    text-align: center;
+    padding-top: 64px;
+  }
+
+  #more-location-btn {
+    margin: 24px 0;
   }
   .mtoip-treat {
     position: relative;
