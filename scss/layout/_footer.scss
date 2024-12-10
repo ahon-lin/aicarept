@@ -27,7 +27,7 @@
     gap: 48px;
     flex-wrap: wrap;
     @include flexbox(column, center, center);
-    border-bottom: 1px solid var(--lightGraycc);
+    // border-bottom: 1px solid var(--lightGraycc);
     padding-bottom: 20px;
     padding-top: 44px;
     margin: auto;
@@ -194,8 +194,10 @@
 
   &-bottom {
     display: flex;
-    gap: 24px;
+    // gap: 24px;
     flex-wrap: wrap;
+    border-top: 1px solid var(--lightGraycc);
+    padding-top: 24px;
 
     @include for-pro-10-p {
       flex-direction: column;
@@ -311,7 +313,7 @@
   }
 
   .copyright-box {
-    background: var(--orange);
+    background: var(--orange-gradient);
     padding: 12px;
     text-align: center;
     color: var(--white);
@@ -331,8 +333,8 @@
   color: var(--orange);
   border: 1px solid var(--orange);
   backdrop-filter: blur(5px);
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   right: 16px;
   bottom: 88px;
   z-index: 100;
@@ -348,15 +350,16 @@
 .reversation-fixed,
 .phone-fixed {
   position: fixed;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
   border-radius: 50%;
   letter-spacing: 2px;
-  width: 45px;
+  width: 40px;
   height: 45px;
   right: 16px;
   z-index: 100;
   @include ease(0.2s);
+  @include flexbox-gap(row, center, center, 8px);
 
   &:hover {
     box-shadow: 0 3px 4px 0px var(--boxShadow);
@@ -380,10 +383,9 @@
     #148116 80.45%
   );
   color: var(--white);
-  @include flexbox-gap(row, center, center, 8px);
   writing-mode: vertical-lr;
   word-break: keep-all;
-  bottom: 350px;
+  bottom: 288px;
   border-radius: 100px;
   height: auto;
   padding: 16px 8px;
@@ -407,14 +409,13 @@
   // background: url(/../../image/other/messenger.svg) center;
   background: var(--orange-gradient);
   color: var(--white);
-  bottom: 200px;
+  bottom: 140px;
   background-size: cover;
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
   @include flexbox(row, center, center);
   height: fit-content;
   border-radius: 50px;
-  font-size: 1.25rem;
   padding: 16px 0;
   font-weight: 500;
   letter-spacing: 1.5px;
