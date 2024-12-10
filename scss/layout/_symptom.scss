@@ -91,6 +91,8 @@
       & > img {
         @include ease(0.2s);
         height: unset;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px -1px var(--orange);
         @include for-phone {
           width: inherit;
         }
@@ -98,18 +100,24 @@
 
       &:hover {
         & > img {
-          box-shadow: 0 3px 4px 0px var(--fontColor);
+          box-shadow: 2px 4px 4px 0px var(--orange);
+          filter: brightness(1.02);
+          border-radius: 20px;
+          transform: translateY(-8px) scale(1.01) rotate(0.4deg);
         }
 
         .swiper-slide-text {
+          @include translateX(8px);
           .arrow {
-            @include translateX(10px);
+            @include translateX(24px);
+            background: var(--orange);
           }
         }
       }
 
       .swiper-slide-text {
         @include flexbox-gap(row, center, flex-start, 16px);
+        @include ease(0.2s);
 
         @include for-pro-10-p {
           font-size: 0.75rem;
@@ -132,10 +140,10 @@
           &:after {
             content: "";
             position: absolute;
-            background: var(--black);
-            width: 5px;
+            background: var(--orange);
+            width: 8px;
             height: 2px;
-            right: 0;
+            right: -2px;
             top: -2px;
             @include rotate(45deg);
           }
