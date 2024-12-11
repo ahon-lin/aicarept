@@ -335,8 +335,8 @@
   backdrop-filter: blur(5px);
   width: 40px;
   height: 40px;
-  right: 16px;
-  bottom: 88px;
+  right: 22px;
+  bottom: 200px;
   z-index: 100;
   @include ease(0.2s);
 
@@ -356,7 +356,7 @@
   letter-spacing: 2px;
   width: 40px;
   height: 45px;
-  right: 16px;
+  right: 22px;
   z-index: 100;
   @include ease(0.2s);
   @include flexbox-gap(row, center, center, 8px);
@@ -385,7 +385,7 @@
   color: var(--white);
   writing-mode: vertical-lr;
   word-break: keep-all;
-  bottom: 288px;
+  bottom: 392px;
   border-radius: 100px;
   height: auto;
   padding: 16px 8px;
@@ -409,7 +409,7 @@
   // background: url(/../../image/other/messenger.svg) center;
   background: var(--orange-gradient);
   color: var(--white);
-  bottom: 140px;
+  bottom: 248px;
   background-size: cover;
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
