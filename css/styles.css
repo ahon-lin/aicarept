@@ -1046,6 +1046,7 @@ p.note {
 
 .header .mobile-nav-switch {
   display: none;
+  font-weight: 900;
 }
 
 @media (max-width: 991px) {

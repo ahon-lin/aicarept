@@ -192,6 +192,7 @@
 
   .mobile-nav-switch {
     display: none;
+    font-weight: 900;
 
     @include for-largepad {
       display: block;
