@@ -354,6 +354,7 @@ template {
   --red: #ff0000;
   --yellow: #ffd029;
   --orange: #f39800;
+  --orange-focus: #fd9800;
   --orange-gradient: linear-gradient(173deg, #f2a81e 0.36%, #fd9800 99.64%);
   --green: #00bbb4;
   --lightGreen: #d3de36;
@@ -926,6 +927,21 @@ p.note {
 .header a:hover,
 .header button:hover {
   color: var(--orange);
+}
+
+.header a:hover.fa-facebook,
+.header button:hover.fa-facebook {
+  color: #1877f2;
+}
+
+.header a:hover.fa-line,
+.header button:hover.fa-line {
+  color: #21b94e;
+}
+
+.header a:hover.fa-youtube,
+.header button:hover.fa-youtube {
+  color: #ff0000;
 }
 
 .header button {
@@ -2392,8 +2408,8 @@ p.note {
 
 .comment > .swiper-button-prev:hover,
 .comment > .swiper-button-next:hover {
-  border: 1px solid var(--green);
-  color: var(--green);
+  color: var(--white);
+  background-color: var(--orange);
 }
 
 @media (max-width: 480px) {
@@ -3197,6 +3213,23 @@ p.note {
   width: fit-content;
   margin: auto;
   cursor: pointer;
+  position: relative;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.blog .blogGrid .article:hover {
+  border-color: var(--orange);
+  filter: saturate(120%);
+}
+
+.blog .blogGrid .article:hover h2 {
+  font-size: 1.375rem;
 }
 
 @media (max-width: 480px) {
@@ -3207,64 +3240,60 @@ p.note {
 
 .blog .blogGrid .article h2 {
   position: relative;
-  color: var(--black);
-  margin-bottom: 32px;
+  color: var(--white);
   font-size: 1.25rem;
-  line-height: 1.75rem;
-  cursor: pointer;
-  color: var(--fontColor);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 768px) {
   .blog .blogGrid .article h2 {
     font-size: 1rem;
-    margin-bottom: 0px;
     line-height: 1.5rem;
   }
 }
 
 .blog .blogGrid .article > div {
   place-self: baseline;
-  height: 5rem;
-  mix-blend-mode: screen;
-  padding: 8px;
+  padding: 16px 24px;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  text-align: center;
+  background: linear-gradient(90deg, #fd9800, transparent 75%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 1024px) {
   .blog .blogGrid .article > div {
     font-size: 0.875rem;
     letter-spacing: 0.1rem;
-    line-height: 1rem;
+    padding: 12px 16px;
   }
 }
 
 @media (max-width: 768px) {
   .blog .blogGrid .article > div {
     letter-spacing: 0.05rem;
-    padding: 0;
-    height: 2rem;
+    padding: 8px 12px;
   }
 }
 
-@media (max-width: 480px) {
-  .blog .blogGrid .article > div {
-    letter-spacing: 0.05rem;
-  }
-}
-
-.blog .blogGrid .article > img {
-  border-radius: 2%;
-  cursor: pointer;
-}
-
-.blog .blogGrid .article:hover > img {
-  filter: saturate(150%);
+.blog .blogGrid .article img {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.blog .blogGrid .article:hover > img {
+  transform: scale(1.05);
 }
 
 .article.cover {
@@ -7955,7 +7984,27 @@ section.facility {
 @media (max-width: 480px) {
   .team-member .team-panel .panel .swiper-button-next,
   .team-member .team-panel .panel .swiper-button-prev {
-    top: 30%;
+    top: 270px;
+  }
+}
+
+.team-member .team-panel .panel .swiper-button-next {
+  right: 5vw;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel .panel .swiper-button-next {
+    right: 10vw;
+  }
+}
+
+.team-member .team-panel .panel .swiper-button-prev {
+  left: 5vw;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel .panel .swiper-button-prev {
+    left: 10vw;
   }
 }
 
@@ -8081,10 +8130,12 @@ section.facility {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide {
-    padding: 0px;
-    height: 40vh;
+    padding: 0 10vw;
+    height: 35vh;
+    max-height: 380px;
+    gap: 8px;
   }
 }
 
@@ -8110,7 +8161,10 @@ section.facility {
     -ms-justify-content: center;
     -o-justify-content: center;
     justify-content: center;
+    gap: 0;
+    max-height: unset;
     height: fit-content;
+    padding: 16px 0;
   }
 }
 
@@ -8120,9 +8174,9 @@ section.facility {
   padding: 40px 0 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording {
-    padding: 32px 0;
+    padding: 24px 0;
     width: 40%;
   }
 }
@@ -8130,7 +8184,7 @@ section.facility {
 @media (max-width: 480px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording {
     width: 100%;
-    padding: 32px 24px 16px 24px;
+    padding: 8px 24px 16px 24px;
     border-top: 1px solid var(--border);
   }
 }
@@ -8139,9 +8193,9 @@ section.facility {
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
   }
 }
 
@@ -8156,15 +8210,27 @@ section.facility {
   margin-bottom: 8px;
 }
 
+@media (max-width: 991px) {
+  .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big h2 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+}
+
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big h2 span {
   font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+  .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big h2 span {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big h2 span {
     display: block;
-    font-size: 1.75rem;
-    margin: 8px 0 4px 0;
+    margin: 8px 0;
   }
 }
 
@@ -8172,6 +8238,12 @@ section.facility {
   font-size: 1.25rem;
   color: var(--fontColor);
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 991px) {
+  .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big .title {
+    font-size: 0.875rem;
+  }
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small {
@@ -8190,6 +8262,7 @@ section.facility {
   overflow: auto;
   padding: 16px 16px 16px 0;
   border-top: 2px solid var(--orange);
+  scrollbar-color: #d1d1d1 #f1f1f1;
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small::-webkit-scrollbar {
@@ -8216,6 +8289,16 @@ section.facility {
   background: transparent;
 }
 
+.team-member .team-panel .panel-table .swipe .swiper-slide .wording .small::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.team-member .team-panel .panel-table .swipe .swiper-slide .wording .small::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 16px;
+  border: none;
+}
+
 @media (max-width: 991px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small {
     display: grid;
@@ -8223,20 +8306,29 @@ section.facility {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     place-items: unset;
-    gap: 32px;
+    gap: 16px;
+    padding: 8px 16px 8px 0;
+    height: 80%;
   }
 }
 
 @media (max-width: 480px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small {
     height: fit-content;
-    max-height: 50vh;
+    max-height: 35vh;
   }
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item h3 {
   font-size: 1.75rem;
   margin-bottom: 12px;
+}
+
+@media (max-width: 991px) {
+  .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item h3 {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+  }
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item ul {
@@ -8284,10 +8376,12 @@ section.facility {
   width: fit-content;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide img,
   .team-member .team-panel .panel-table .swipe .swiper-slide .no-img {
-    height: 100%;
+    max-width: 44vw;
+    height: auto;
+    max-height: 100%;
     width: fit-content;
   }
 }
@@ -8295,8 +8389,10 @@ section.facility {
 @media (max-width: 480px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide img,
   .team-member .team-panel .panel-table .swipe .swiper-slide .no-img {
-    width: 100%;
-    height: 100vw;
+    width: 50%;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    height: auto;
     max-width: unset;
   }
 }
@@ -8375,7 +8471,7 @@ section.facility {
   padding: 40px 0 16px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .team-member .team-panel .panel-table:last-child .wrapper .wording {
     padding: 32px 0;
     width: 40%;
@@ -8525,7 +8621,7 @@ section.facility {
 }
 
 .physiotherapy .treat-pt-show article {
-  padding: 40px;
+  padding: 36px;
   overflow: auto;
   /* for firefox */
   overflow-y: scroll;
@@ -8563,6 +8659,7 @@ section.facility {
 @media (max-width: 991px) {
   .physiotherapy .treat-pt-show article {
     overflow: unset;
+    padding: 24px;
   }
 }
 
@@ -8576,9 +8673,9 @@ section.facility {
 .physiotherapy .treat-pt-show article h1 {
   margin-bottom: 16px;
   width: fit-content;
-  background-color: var(--lightGreen);
+  background: linear-gradient(90deg, #d3de36, transparent 100%);
   color: var(--black);
-  padding: 0 8px;
+  padding: 0 16px;
   letter-spacing: 1px;
   text-align: justify;
 }
@@ -8587,13 +8684,12 @@ section.facility {
   font-size: 1.75rem;
   line-height: 2rem;
   letter-spacing: 1.15px;
-  margin: 24px 0;
+  margin: 1rem 0;
 }
 
 @media (max-width: 991px) {
   .physiotherapy .treat-pt-show article h2 {
     line-height: 2rem;
-    margin: 24px 0;
   }
 }
 
@@ -8602,21 +8698,28 @@ section.facility {
   font-size: 1.5rem;
   line-height: 2.5rem;
   letter-spacing: 1.15px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--lightGreen);
 }
 
 @media (max-width: 991px) {
   .physiotherapy .treat-pt-show article h3 {
     line-height: 2rem;
-    margin-bottom: 1rem;
     padding-bottom: 4px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 .physiotherapy .treat-pt-show article p.text-body {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  .physiotherapy .treat-pt-show article p.text-body {
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+  }
 }
 
 .physiotherapy .treat-pt-show article ul {
@@ -8641,18 +8744,35 @@ section.facility {
   -ms-justify-content: start;
   -o-justify-content: start;
   justify-content: start;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
   margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+  .physiotherapy .treat-pt-show article ul {
+    gap: 0;
+  }
 }
 
 .physiotherapy .treat-pt-show article ul.b-list h3 {
   margin: 24px 0 8px 0;
 }
 
+.physiotherapy .treat-pt-show article ul.b-list li {
+  color: var(--orange);
+  font-weight: 400;
+}
+
 .physiotherapy .treat-pt-show article ul.number-list li {
   list-style: decimal;
   list-style-position: inside;
+}
+
+@media (max-width: 991px) {
+  .physiotherapy .treat-pt-show article ul.number-list li {
+    font-size: 1.125rem;
+  }
 }
 
 .physiotherapy .treat-pt-show article ul.QA-list {
@@ -8661,6 +8781,8 @@ section.facility {
 
 .physiotherapy .treat-pt-show article ul.QA-list .answer-list {
   gap: 0;
+  padding: 8px 0;
+  background-color: var(--lightGrayf3);
 }
 
 .physiotherapy .treat-pt-show article ul.QA-list .answer-list li {
@@ -8683,8 +8805,8 @@ section.facility {
 
 .physiotherapy .treat-pt-show article ul li.dot-item .dot {
   margin-top: calc((1rem / 2) + 1px);
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background: var(--black);
 }
@@ -8733,6 +8855,10 @@ section.facility {
   width: 100%;
   background-color: var(--lightGrayf3);
   color: var(--fontColor);
+}
+
+.physiotherapy .treat-pt-show article ul li span.oicon {
+  color: var(--orange);
 }
 
 .physiotherapy .treat-pt-show .cover-inside {
@@ -8855,10 +8981,13 @@ section.facility {
   color: var(--black);
   cursor: pointer;
   box-sizing: border-box;
-  -webkit-transition: all 0.05s ease;
-  -moz-transition: all 0.05s ease;
-  -o-transition: all 0.05s ease;
-  transition: all 0.05s ease;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 768px) {
@@ -8873,17 +9002,33 @@ section.facility {
   }
 }
 
+.physiotherapy .treat-pt .swiper-slide:hover button {
+  font-size: 1.375rem;
+  filter: saturate(120%);
+}
+
 .physiotherapy .treat-pt .swiper-slide button {
-  color: white;
-  background-color: var(--orange);
-  font-size: 1.5rem;
-  padding: 8px 4px;
-  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  border-radius: 0;
+  background: linear-gradient(45deg, #fd9800, transparent 85%);
+  font-size: 1.25rem;
+  padding: 8px 12px;
+  text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 0;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 768px) {
   .physiotherapy .treat-pt .swiper-slide button {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -8933,7 +9078,7 @@ section.facility {
 
 .physiotherapy .treat-pt .swiper-slide-thumb-active {
   opacity: 1;
-  filter: brightness(100%);
+  filter: saturate(120%);
   border: 2px solid var(--orange);
 }
 
@@ -8958,7 +9103,7 @@ section.facility {
   background: var(--orange);
   width: 100%;
   height: 3px;
-  bottom: -10px;
+  bottom: -8px;
   left: 0;
 }
 
@@ -9547,7 +9692,7 @@ section.facility {
 
 .aicare-textfield > input {
   background: transparent;
-  border: 1px solid var(--fontColor);
+  border: 1px solid var(--border);
   padding: 6px 12px;
   padding-left: 140px;
   background-color: var(--white);
@@ -9577,7 +9722,7 @@ section.facility {
 .aicare-selector > select {
   background-color: var(--white);
   color: var(--fontColor);
-  border: 1px solid var(--fontColor);
+  border: 1px solid var(--border);
   border-radius: 5px;
   padding: 2px 12px;
   padding-left: 16px;
@@ -9616,7 +9761,7 @@ section.facility {
 }
 
 .aicare-button:hover {
-  background: var(--green);
+  filter: contrast(1.2);
 }
 
 .aicare-button .icon {
@@ -9670,7 +9815,7 @@ section.facility {
 .aicare-checkbox > label::before {
   content: "";
   position: absolute;
-  border: 1px solid var(--fontColor);
+  border: 1px solid var(--border);
   background-color: var(--white);
   border-radius: 5px;
   width: 24px;

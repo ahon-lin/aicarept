@@ -114,6 +114,15 @@
 
     &:hover {
       color: var(--orange);
+      &.fa-facebook {
+        color: #1877f2;
+      }
+      &.fa-line {
+        color: #21b94e;
+      }
+      &.fa-youtube {
+        color: #ff0000;
+      }
     }
   }
 

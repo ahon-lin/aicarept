@@ -23,7 +23,7 @@
     &::before {
       content: "";
       position: absolute;
-      border: 1px solid var(--fontColor);
+      border: 1px solid var(--border);
       background-color: var(--white);
       border-radius: 5px;
       width: 24px;

@@ -22,7 +22,7 @@
 
   & > input {
     background: transparent;
-    border: 1px solid var(--fontColor);
+    border: 1px solid var(--border);
     padding: 6px 12px;
     padding-left: 140px;
     background-color: var(--white);
@@ -51,7 +51,7 @@
   & > select {
     background-color: var(--white);
     color: var(--fontColor);
-    border: 1px solid var(--fontColor);
+    border: 1px solid var(--border);
     border-radius: 5px;
     padding: 2px 12px;
     padding-left: 16px;
