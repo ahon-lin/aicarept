@@ -7,6 +7,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  -webkit-appearance: none;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -2670,19 +2674,13 @@ p.note {
 
 .colophon-top .reservation .reserve-bottom form {
   display: grid;
-  gap: 16px;
+  gap: 12px;
   grid-template-columns: auto;
   margin-bottom: 24px;
   color: var(--fontColor);
   padding: 16px;
   max-width: 800px;
   margin: auto;
-}
-
-@media (max-width: 480px) {
-  .colophon-top .reservation .reserve-bottom form {
-    padding: 16px 4px;
-  }
 }
 
 .colophon-top .reservation .reserve-bottom form > footer {
@@ -2713,13 +2711,16 @@ p.note {
   font-weight: 500;
 }
 
-.colophon-top .reservation .reserve-bottom form .symptom-checkbox > label {
+.colophon-top .reservation .reserve-bottom form .symptom-checkbox > label,
+.colophon-top .reservation .reserve-bottom form .radio-container > label {
   font-size: 1rem;
   position: relative;
   padding-left: 20px;
+  font-weight: 500;
 }
 
-.colophon-top .reservation .reserve-bottom form .symptom-checkbox > label::before {
+.colophon-top .reservation .reserve-bottom form .symptom-checkbox > label::before,
+.colophon-top .reservation .reserve-bottom form .radio-container > label::before {
   position: absolute;
   content: "*";
   width: 4px;
@@ -2729,8 +2730,11 @@ p.note {
   left: 11px;
 }
 
-.colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-checkbox {
-  padding-top: 8px;
+.colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-checkbox,
+.colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-radio,
+.colophon-top .reservation .reserve-bottom form .radio-container .aicare-checkbox,
+.colophon-top .reservation .reserve-bottom form .radio-container .aicare-radio {
+  padding-top: 12px;
   padding-left: 20px;
   width: 100%;
   display: grid;
@@ -2738,12 +2742,25 @@ p.note {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   place-items: start;
-  gap: 12px;
+  gap: 8px;
+  column-gap: 16px;
 }
 
 @media (max-width: 991px) {
-  .colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-checkbox {
+  .colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-checkbox,
+  .colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-radio,
+  .colophon-top .reservation .reserve-bottom form .radio-container .aicare-checkbox,
+  .colophon-top .reservation .reserve-bottom form .radio-container .aicare-radio {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-checkbox,
+  .colophon-top .reservation .reserve-bottom form .symptom-checkbox .aicare-radio,
+  .colophon-top .reservation .reserve-bottom form .radio-container .aicare-checkbox,
+  .colophon-top .reservation .reserve-bottom form .radio-container .aicare-radio {
+    column-gap: 8px;
   }
 }
 
@@ -2796,7 +2813,7 @@ p.note {
     grid-template-rows: auto;
     place-items: unset;
     gap: 8px;
-    padding: 0 20px;
+    padding: 0 32px;
     width: 100%;
     margin-bottom: 24px;
     text-align: center;
@@ -2990,8 +3007,8 @@ p.note {
   position: fixed;
   border-radius: 50%;
   color: var(--orange);
-  border: 1px solid var(--orange);
-  backdrop-filter: blur(5px);
+  border: 2px solid var(--orange);
+  backdrop-filter: blur(2px);
   width: 40px;
   height: 40px;
   right: 22px;
@@ -9678,9 +9695,11 @@ section.facility {
   font-size: 1rem;
   position: absolute;
   left: 12px;
-  top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   border-right: 1px solid var(--lightGraycc);
   width: 120px;
+  font-weight: 500;
 }
 
 .aicare-textfield .reuqired::before {
@@ -9693,10 +9712,10 @@ section.facility {
 .aicare-textfield > input {
   background: transparent;
   border: 1px solid var(--border);
-  padding: 6px 12px;
+  padding: 4px 12px;
   padding-left: 140px;
   background-color: var(--white);
-  min-height: 40px;
+  min-height: 48px;
 }
 
 .aicare-selector {
@@ -9709,7 +9728,8 @@ section.facility {
   font-size: 1.125rem;
   position: absolute;
   left: 12px;
-  top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .aicare-selector > label::before {
@@ -9725,8 +9745,18 @@ section.facility {
   border: 1px solid var(--border);
   border-radius: 5px;
   padding: 2px 12px;
-  padding-left: 16px;
-  min-height: 40px;
+  padding-left: 20px;
+  min-height: 48px;
+  font-weight: 500;
+}
+
+.aicare-selector i {
+  font-size: 1rem;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  color: var(--fontColor);
 }
 
 .aicare-button {
@@ -9769,7 +9799,8 @@ section.facility {
   height: 20px;
 }
 
-.aicare-checkbox {
+.aicare-checkbox,
+.aicare-radio {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -9793,26 +9824,33 @@ section.facility {
   cursor: pointer;
 }
 
-.aicare-checkbox > input {
+.aicare-checkbox > input,
+.aicare-radio > input {
   display: none;
 }
 
-.aicare-checkbox > input:checked + label::before {
+.aicare-checkbox > input:checked + label::before,
+.aicare-radio > input:checked + label::before {
   border: 12px solid var(--orange);
 }
 
-.aicare-checkbox > input:checked + label::after {
+.aicare-checkbox > input:checked + label::after,
+.aicare-radio > input:checked + label::after {
   opacity: 1;
   visibility: visible;
 }
 
-.aicare-checkbox > label {
+.aicare-checkbox > label,
+.aicare-radio > label {
   position: relative;
   cursor: pointer;
   margin-left: 32px;
+  width: 100%;
+  min-height: 24px;
 }
 
-.aicare-checkbox > label::before {
+.aicare-checkbox > label::before,
+.aicare-radio > label::before {
   content: "";
   position: absolute;
   border: 1px solid var(--border);
@@ -9828,7 +9866,8 @@ section.facility {
   transition: all 0.2s ease;
 }
 
-.aicare-checkbox > label::after {
+.aicare-checkbox > label::after,
+.aicare-radio > label::after {
   content: "";
   position: absolute;
   border: 3px solid var(--white);
@@ -9845,4 +9884,24 @@ section.facility {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.aicare-radio > label::before {
+  border-radius: 50%;
+}
+
+.aicare-radio > label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: var(--orange);
+  width: 12px;
+  height: 12px;
+  left: -26px;
+  top: 4px;
+  border: unset;
+}
+
+.aicare-radio > input:checked + label::before {
+  border-width: 1px;
 }

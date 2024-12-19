@@ -3,21 +3,32 @@
   <section class="reservation" data-aos=" flip-up">
     <div class="reserve-bottom">
       <header>
+        <img src="/image/ci/ci-horizontal.png" />
         <small>預約表單</small>
       </header>
       <form action="#">
         <div class="aicare-textfield name">
           <label for="name" class="reuqired">姓名</label>
-          <input type="text" id="name" required />
+          <input type="text" id="name" required placeholder="請輸入姓名" />
         </div>
-        <div class="aicare-selector sex">
+        <!-- 性別 -->
+        <div class="radio-container sex">
+          <label for="sex">性別</label>
+          <div class="aicare-radio">
+            <input type="radio" id="male" name="sex" required />
+            <label for="male">男</label>
+            <input type="radio" id="female" name="sex" />
+            <label for="female">女</label>
+          </div>
+        </div>
+        <!-- <div class="aicare-selector sex">
           <label for="sex"></label>
           <select>
             <option value="0" selected>性別</option>
             <option value="1">男</option>
             <option value="2">女</option>
           </select>
-        </div>
+        </div> -->
         <div class="aicare-textfield phone">
           <label for="phone" class="reuqired">聯絡手機</label>
           <input
@@ -27,16 +38,18 @@
             onkeyup="this.value=this.value.replace(/[^0-9+]+/,'')"
             pattern="\d*"
             required
+            placeholder="請輸入手機號碼"
           />
         </div>
         <div class="aicare-selector city">
           <label for="reserve-city"></label>
           <select id="reserve-city" required>
             <option value="0" selected>地區</option>
-            <option value="1">台北分院</option>
-            <option value="2">新北分院</option>
-            <option value="3">台中分院</option>
+            <option value="1">台北市</option>
+            <option value="2">新北市</option>
+            <option value="3">桃園市</option>
           </select>
+          <i class="fa-solid fa-angle-up icon"></i>
         </div>
         <div class="aicare-selector branch">
           <label for="reserve"></label>
@@ -56,10 +69,11 @@
             <option value="1">天母分院</option>
             <option value="0" selected>預約分院</option>
           </select>
+          <i class="fa-solid fa-angle-up icon"></i>
         </div>
         <!-- 病痛checkbox -->
         <div class="symptom-checkbox part">
-          <label for="reserve">疼痛部位</label>
+          <label for="reserve">疼痛部位 (可複選)</label>
           <div class="aicare-checkbox">
             <input type="checkbox" id="symptom1" />
             <label for="symptom1">肩頸痠痛</label>
@@ -81,7 +95,29 @@
             <label for="symptom9">其他</label>
           </div>
         </div>
-        <div class="aicare-selector time">
+        <!-- 選擇時間 -->
+        <div class="radio-container slots">
+          <label for="slots">可聯絡的時間</label>
+          <div class="aicare-radio">
+            <input type="radio" id="morning" name="slots" required />
+            <label for="morning">09:00 ~ 12:00</label>
+            <input type="radio" id="afternoon" name="slots" />
+            <label for="afternoon">12:00 ~ 18:00</label>
+            <input type="radio" id="evening" name="slots" />
+            <label for="evening">18:00 ~ 21:00</label>
+          </div>
+        </div>
+        <!-- 是否已來過生生優動 -->
+        <div class="radio-container been">
+          <label for="been">是否已來過生生優動</label>
+          <div class="aicare-radio">
+            <input type="radio" id="byes" name="been" required />
+            <label for="byes">是</label>
+            <input type="radio" id="bno" name="been" />
+            <label for="bno">否</label>
+          </div>
+        </div>
+        <!-- <div class="aicare-selector time">
           <label for="contact"></label>
           <select id="contact" required>
             <option value="0" selected>可聯絡的時間</option>
@@ -89,15 +125,15 @@
             <option value="2">12:00 ~ 18:00</option>
             <option value="3">18:00 ~ 21:00</option>
           </select>
-        </div>
-        <div class="aicare-selector visited">
+        </div> -->
+        <!-- <div class="aicare-selector visited">
           <label for="contact"></label>
           <select id="contact" required>
             <option value="0" selected>是否已來過生生優動治療</option>
             <option value="1">是</option>
             <option value="2">否</option>
           </select>
-        </div>
+        </div> -->
         <div class="aicare-textfield referrer">
           <label for="recommend">推薦人</label>
           <input type="text" id="recommend" placeholder="非必填" />

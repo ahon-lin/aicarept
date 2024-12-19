@@ -7,9 +7,11 @@
     font-size: 1rem;
     position: absolute;
     left: 12px;
-    top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     border-right: 1px solid var(--lightGraycc);
     width: 120px;
+    font-weight: 500;
   }
   .reuqired {
     &::before {
@@ -23,10 +25,10 @@
   & > input {
     background: transparent;
     border: 1px solid var(--border);
-    padding: 6px 12px;
+    padding: 4px 12px;
     padding-left: 140px;
     background-color: var(--white);
-    min-height: 40px;
+    min-height: 48px;
   }
 }
 
@@ -39,7 +41,8 @@
     font-size: 1.125rem;
     position: absolute;
     left: 12px;
-    top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     &::before {
       content: "*";
       width: 4px;
@@ -54,10 +57,19 @@
     border: 1px solid var(--border);
     border-radius: 5px;
     padding: 2px 12px;
-    padding-left: 16px;
-    min-height: 40px;
+    padding-left: 20px;
+    min-height: 48px;
+    font-weight: 500;
 
     & > option {
     }
+  }
+  i {
+    font-size: 1rem;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    color: var(--fontColor);
   }
 }
