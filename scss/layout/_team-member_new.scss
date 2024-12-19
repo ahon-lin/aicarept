@@ -162,7 +162,19 @@
         color: var(--fontColor);
         top: 60%;
         @include for-phone {
-          top: 30%;
+          top: 270px;
+        }
+      }
+      .swiper-button-next {
+        right: 5vw;
+        @include for-phone {
+          right: 10vw;
+        }
+      }
+      .swiper-button-prev {
+        left: 5vw;
+        @include for-phone {
+          left: 10vw;
         }
       }
 
@@ -238,32 +250,36 @@
             padding: 0 100px;
             height: 520px;
             @include flexbox(row, end, center);
-            @include for-pad {
-              padding: 0px;
-              height: 40vh;
+            @include for-largepad {
+              padding: 0 10vw;
+              height: 35vh;
+              max-height: 380px;
+              gap: 8px;
             }
             @include for-phone {
-              @include flexbox(column, center, center);
+              @include flexbox-gap(column, center, center, 0);
+              max-height: unset;
               height: fit-content;
+              padding: 16px 0;
             }
 
             .wording {
               width: 50%;
               height: 100%;
               padding: 40px 0 0 0;
-              @include for-pad {
-                padding: 32px 0;
+              @include for-largepad {
+                padding: 24px 0;
                 width: 40%;
               }
               @include for-phone {
                 width: 100%;
-                padding: 32px 24px 16px 24px;
+                padding: 8px 24px 16px 24px;
                 border-top: 1px solid var(--border);
               }
               .big {
                 margin-bottom: 16px;
-                @include for-pad {
-                  margin-bottom: 24px;
+                @include for-largepad {
+                  margin-bottom: 8px;
                 }
                 @include for-phone {
                   text-align: center;
@@ -271,12 +287,18 @@
                 h2 {
                   font-size: 2.5rem;
                   margin-bottom: 8px;
+                  @include for-largepad {
+                    font-size: 1.5rem;
+                    margin-bottom: 4px;
+                  }
                   span {
                     font-size: 2rem;
+                    @include for-largepad {
+                      font-size: 1.25rem;
+                    }
                     @include for-phone {
                       display: block;
-                      font-size: 1.75rem;
-                      margin: 8px 0 4px 0;
+                      margin: 8px 0;
                     }
                   }
                 }
@@ -284,6 +306,9 @@
                   font-size: 1.25rem;
                   color: var(--fontColor);
                   letter-spacing: 0.5px;
+                  @include for-largepad {
+                    font-size: 0.875rem;
+                  }
                 }
               }
               .small {
@@ -293,17 +318,33 @@
                 overflow: auto;
                 padding: 16px 16px 16px 0;
                 border-top: 2px solid var(--orange);
+                scrollbar-color: #d1d1d1 #f1f1f1;
+                &::-webkit-scrollbar-track {
+                  background: #f1f1f1;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  background-color: #d1d1d1;
+                  border-radius: 16px;
+                  border: none;
+                }
                 @include for-largepad {
-                  @include grid(row, 1fr, repeat(4, auto), unset, 32px);
+                  @include grid(row, 1fr, repeat(4, auto), unset, 16px);
+                  padding: 8px 16px 8px 0;
+                  height: 80%;
                 }
                 @include for-phone {
                   height: fit-content;
-                  max-height: 50vh;
+                  max-height: 35vh;
                 }
                 .item {
                   h3 {
                     font-size: 1.75rem;
                     margin-bottom: 12px;
+                    @include for-largepad {
+                      font-size: 1.125rem;
+                      margin-bottom: 8px;
+                    }
                   }
                   ul {
                     font-size: 1rem;
@@ -330,13 +371,17 @@
               max-width: 50vw;
               width: fit-content;
 
-              @include for-pad {
-                height: 100%;
+              @include for-largepad {
+                max-width: 44vw;
+                height: auto;
+                max-height: 100%;
                 width: fit-content;
               }
               @include for-phone {
-                width: 100%;
-                height: 100vw;
+                width: 50%;
+                border-radius: 50%;
+                border: 1px solid var(--border);
+                height: auto;
                 max-width: unset;
               }
             }
@@ -374,7 +419,7 @@
               width: 50%;
               height: 100%;
               padding: 40px 0 16px 0;
-              @include for-pad {
+              @include for-largepad {
                 padding: 32px 0;
                 width: 40%;
               }

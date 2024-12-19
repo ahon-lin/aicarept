@@ -124,16 +124,13 @@
         width: 100%;
         form {
           display: grid;
-          gap: 16px;
+          gap: 12px;
           grid-template-columns: auto;
           margin-bottom: 24px;
           color: var(--fontColor);
           padding: 16px;
           max-width: 800px;
           margin: auto;
-          @include for-phone {
-            padding: 16px 4px;
-          }
 
           & > footer {
             display: grid;
@@ -162,11 +159,13 @@
             font-weight: 500;
           }
           // 9種疼痛位置checkbox
-          .symptom-checkbox {
+          .symptom-checkbox,
+          .radio-container {
             & > label {
               font-size: 1rem;
               position: relative;
               padding-left: 20px;
+              font-weight: 500;
               &::before {
                 position: absolute;
                 content: "*";
@@ -177,13 +176,18 @@
                 left: 11px;
               }
             }
-            .aicare-checkbox {
-              padding-top: 8px;
+            .aicare-checkbox,
+            .aicare-radio {
+              padding-top: 12px;
               padding-left: 20px;
               width: 100%;
-              @include grid(row, repeat(3, 1fr), auto, start, 12px);
+              @include grid(row, repeat(3, 1fr), auto, start, 8px);
+              column-gap: 16px;
               @include for-largepad {
                 grid-template-columns: repeat(2, 1fr);
+              }
+              @include for-phone {
+                column-gap: 8px;
               }
             }
           }
@@ -227,7 +231,7 @@
 
       @include for-phone {
         @include grid(row, repeat(4, 1fr), auto, unset, 8px);
-        padding: 0 20px;
+        padding: 0 32px;
         width: 100%;
         margin-bottom: 24px;
         text-align: center;
@@ -331,8 +335,8 @@
   position: fixed;
   border-radius: 50%;
   color: var(--orange);
-  border: 1px solid var(--orange);
-  backdrop-filter: blur(5px);
+  border: 2px solid var(--orange);
+  backdrop-filter: blur(2px);
   width: 40px;
   height: 40px;
   right: 22px;
