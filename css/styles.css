@@ -9451,6 +9451,10 @@ section.facility {
   justify-content: center;
 }
 
+.single-page.mxw-0 {
+  max-width: unset;
+}
+
 .single-page img {
   height: auto;
 }
@@ -9683,6 +9687,105 @@ section.facility {
 
 .single-page .mtoip-fixed-btn:hover {
   box-shadow: 0 3px 4px 0px var(--fontColor);
+}
+
+.single-page .hint-container {
+  background-color: var(--orange);
+  width: 100%;
+  padding: 12px;
+  font-size: 0.875rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.single-page .hint-container span.title {
+  padding-right: 8px;
+  border-right: 1px solid var(--white);
+}
+
+@media (max-width: 480px) {
+  .single-page .hint-container span.title {
+    width: 40px;
+  }
+}
+
+.single-page ~ .colophon {
+  gap: 0;
+}
+
+.notice {
+  padding: 40px;
+  background-color: var(--white);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: start;
+  -moz-justify-content: start;
+  -ms-justify-content: start;
+  -o-justify-content: start;
+  justify-content: start;
+}
+
+.notice h3 {
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.notice ul.text-body {
+  max-width: 1200px;
+}
+
+.notice li {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--lightGrayf9);
+  font-size: 1rem;
+  background-color: unset;
+  position: relative;
+}
+
+.notice li::before {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 4px;
+  top: 1.2rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  content: "";
 }
 
 .aicare-textfield {

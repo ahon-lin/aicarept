@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>生生優動 AiCare</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="DC.Publisher" content="生生優動" />
+    <meta name="DC.Description" content="" />
+    <meta name="DC.Type" content="website" />
+    <meta itemprop="name" content="生生優動" />
+    <meta itemprop="description" content="" />
+    <meta property="og:title" content="生生優動" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="生生優動" />
+    <meta property="og:description" content="" />
+    <link rel="image_src" href="" type="image/jpeg" />
+    <link rel="shortcut icon" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <link
+      rel="icon"
+      href="https://event.aicarept.com/static/img/logo_32.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="https://event.aicarept.com/static/img/logo_32@2x.png"
+      sizes="32*32"
+      type="image/png"
+    />
+    <!-- fontaewsom pro -->
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="/swiper/swiper-bundle.min.css" />
+    <!-- aos css -->
+    <link rel="stylesheet" href="/aos-master/dist/aos.css" />
+    <!-- default.css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- 標題＋Nav -->
+    <header class="header header-fixed">
+      <a href="/../index.html" class="ci">
+        <img src="/../image/ci/ci-vertically.png" />
+      </a>
+    </header>
+    <section class="single-page mxw-0">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="/image/singlePage/happygo-banner-g-m.jpg"
+        />
+        <img
+          src="/image/singlePage/happygo-banner-g.jpg"
+          alt="happyGo送88點+免費健康諮詢"
+        />
+      </picture>
+      <div class="hint-container">
+        <span class="title">溫馨提醒</span>
+        <span>請您填寫正確資料，以確保 HAPPY GO 點數可成功領取</span>
+      </div>
+    </section>
+    <!-- Sitemap + 留言 + 版權 -->
+    <footer class="colophon">
+      <div class="colophon-top">
+        <a name="reserve" id="reserve"></a>
+        <section class="reservation" data-aos=" flip-up">
+          <div class="reserve-bottom">
+            <header>
+              <img src="/image/ci/ci-horizontal.png" />
+              <small>預約表單</small>
+            </header>
+            <form action="#">
+              <div class="aicare-textfield name">
+                <label for="name" class="reuqired">姓名</label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="請輸入姓名"
+                />
+              </div>
+              <!-- 性別 -->
+              <div class="radio-container sex">
+                <label for="sex">性別</label>
+                <div class="aicare-radio">
+                  <input type="radio" id="male" name="sex" required />
+                  <label for="male">男</label>
+                  <input type="radio" id="female" name="sex" />
+                  <label for="female">女</label>
+                </div>
+              </div>
+              <div class="aicare-textfield phone">
+                <label for="phone" class="reuqired">聯絡手機</label>
+                <input
+                  type="text"
+                  id="phone"
+                  max="10"
+                  onkeyup="this.value=this.value.replace(/[^0-9+]+/,'')"
+                  pattern="\d*"
+                  required
+                  placeholder="請輸入手機號碼"
+                />
+              </div>
+              <div class="aicare-selector city">
+                <label for="reserve-city"></label>
+                <select id="reserve-city" required>
+                  <option value="0" selected>地區</option>
+                  <option value="1">台北市</option>
+                  <option value="2">新北市</option>
+                  <option value="3">桃園市</option>
+                </select>
+                <i class="fa-solid fa-angle-up icon"></i>
+              </div>
+              <div class="aicare-selector branch">
+                <label for="reserve"></label>
+                <select id="reserve" required>
+                  <option value="13">萬芳分院</option>
+                  <option value="12">新莊分院</option>
+                  <option value="11">信義分院</option>
+                  <option value="10">三重分院</option>
+                  <option value="9">古亭分院</option>
+                  <option value="8">新店分院</option>
+                  <option value="7">林口分院</option>
+                  <option value="6">雙和分院</option>
+                  <option value="5">板橋分院</option>
+                  <option value="4">內湖分院</option>
+                  <option value="2">民生分院</option>
+                  <option value="3">忠孝新生分院</option>
+                  <option value="1">天母分院</option>
+                  <option value="0" selected>預約分院</option>
+                </select>
+                <i class="fa-solid fa-angle-up icon"></i>
+              </div>
+              <!-- 病痛checkbox -->
+              <div class="symptom-checkbox part">
+                <label for="reserve">疼痛部位 (可複選)</label>
+                <div class="aicare-checkbox">
+                  <input type="checkbox" id="symptom1" />
+                  <label for="symptom1">肩頸痠痛</label>
+                  <input type="checkbox" id="symptom2" />
+                  <label for="symptom2">下背痛</label>
+                  <input type="checkbox" id="symptom3" />
+                  <label for="symptom3">膝蓋痛</label>
+                  <input type="checkbox" id="symptom4" />
+                  <label for="symptom4">手腕痛</label>
+                  <input type="checkbox" id="symptom5" />
+                  <label for="symptom5">手肘痛</label>
+                  <input type="checkbox" id="symptom6" />
+                  <label for="symptom6">髖部疼痛（臀部）</label>
+                  <input type="checkbox" id="symptom7" />
+                  <label for="symptom7">足踝及腳痛</label>
+                  <input type="checkbox" id="symptom8" />
+                  <label for="symptom8">中風與帕金森氏症</label>
+                  <input type="checkbox" id="symptom9" />
+                  <label for="symptom9">其他</label>
+                </div>
+              </div>
+              <!-- 選擇時間 -->
+              <div class="radio-container slots">
+                <label for="slots">可聯絡的時間</label>
+                <div class="aicare-radio">
+                  <input type="radio" id="morning" name="slots" required />
+                  <label for="morning">09:00 ~ 12:00</label>
+                  <input type="radio" id="afternoon" name="slots" />
+                  <label for="afternoon">12:00 ~ 18:00</label>
+                  <input type="radio" id="evening" name="slots" />
+                  <label for="evening">18:00 ~ 21:00</label>
+                </div>
+              </div>
+              <!-- 是否已來過生生優動 -->
+              <div class="radio-container been">
+                <label for="been">是否已來過生生優動</label>
+                <div class="aicare-radio">
+                  <input type="radio" id="bno" name="been" />
+                  <label for="bno">否</label>
+                  <input type="radio" id="byes" name="been" required />
+                  <label for="byes">是</label>
+                </div>
+              </div>
+              <div class="aicare-textfield referrer">
+                <label for="recommend">推薦人</label>
+                <input
+                  type="text"
+                  id="recommend"
+                  placeholder="非必填"
+                  value="Happy GO"
+                  readonly
+                />
+              </div>
+              <div class="aicare-checkbox agree">
+                <input type="checkbox" id="agree" />
+                <label for="agree"
+                  >我已同意
+                  <span class="terms"
+                    >首次諮詢專案價、注意事項及個資告知事項</span
+                  >
+                </label>
+              </div>
+
+              <footer>
+                <small
+                  >( 提醒您！實際預約需在專人聯繫確認後，才算完成喔！)</small
+                >
+                <button type="button" class="aicare-button">確認送出</button>
+              </footer>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="notice">
+        <h3>活動辦法與注意事項</h3>
+        <ul class="text-body">
+          <li data-aos="flip-up">
+            本活動由梅科科技和鼎鼎聯合行銷股份有限公司（下簡稱「鼎鼎行銷」）共同主辦(合稱主辦單位)；主辦單位員工，恕無法參加本次活動。
+          </li>
+          <li data-aos="flip-up">
+            本活動期間為西元 2024 年 12 月 30 日至 2025 年 1 月 3
+            日截止。快樂購點數將於 2024 年 1 月 30 日前發放。
+          </li>
+          <li data-aos="flip-up">
+            每名參加者限領取快樂購點數一次；若資料重覆、不全或有誤，主辦單位有權取消其獲獎資格。
+          </li>
+          <li data-aos="flip-up">
+            參加者不得冒用或盜用任何第三人之資料，若經主辦單位發送參加者將喪失獲獎資格。
+          </li>
+          <li data-aos="flip-up">
+            參加者同意參加本活動時，即代表同意接受本活動辦法與注意事項之規範，如有違反，主辦單位得取消其參加資格，並得就因此所產生之損害，向該參加者請求損害賠償。
+          </li>
+          <li data-aos="flip-up">
+            本活動嚴禁參加者使用程式或其他方式進行系統干擾、攻擊網站等任何破壞活動，及任何詐騙行動或違法行為。如經主辦單位查證發現，主辦單位得取消其參加權利與獲獎資格，亦得追究其法律責任。
+          </li>
+          <li data-aos="flip-up">
+            主辦單位保有最終對本活動辦法、獎項內容之變更及活動暫停、取消或終止之權利，如有變更、暫停、取消或終止時，相關訊息將於本活動網頁公告，恕不另行通知。
+          </li>
+        </ul>
+      </div>
+      <dfiv class="copyright-box">
+        <small class="copyright">生生優動版權所有 © All Rights Reserved.</small>
+        <div class="recaptcha-box">
+          <small
+            >本站採用 reCAPTCHA 保護機制
+            <a href="https://policies.google.com/privacy" target="_blank"
+              >隱私權</a
+            >
+            &amp;
+            <a href="https://policies.google.com/terms" target="_blank"
+              >條款</a
+            ></small
+          >
+        </div>
+      </dfiv>
+    </footer>
+
+    <div class="popup" id="terms-popup"></div>
+  </body>
+  <!-- 引用 jquery 3.6.1 -->
+  <script src="/js/jquery-3.6.4.min.js"></script>
+  <!-- 引用 swiper   -->
+  <script src="/swiper/swiper-bundle.min.js"></script>
+  <!-- 引用aos特效 -->
+  <script src="/aos-master/dist/aos.js"></script>
+  <!-- swiper 載入共同頁面  -->
+  <script src="/js/loading.js"></script>
+  <!-- header固定 -->
+  <!-- <script src="/js/header.js"></script> -->
+  <!-- counter -->
+  <!-- <script src="/js/counter.js"></script> -->
+  <!-- scroll top  -->
+  <script src="/js/scrollTop.js"></script>
+  <!-- location scroll -->
+  <script src="/js/location-scroll.js" defer></script>
+  <!-- mobile-nav-switch -->
+  <!-- <script src="/js/mobile-nav-switch.js" defer></script> -->
+  <!-- reservation scroll -->
+  <!-- <script src="/js/reservate.js" defer></script> -->
+  <!-- 顯示分院  -->
+  <script src="/js/showLocationList.js"></script>
+  <!-- aos 初始化  -->
+  <script src="/js/aos.js"></script>
+  <!-- swiper 初始化  -->
+  <script src="/js/swiper.js"></script>
+</html>
