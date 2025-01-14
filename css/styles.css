@@ -5935,7 +5935,7 @@ section.facility {
   width: 200px;
   color: var(--fontColor);
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -6348,7 +6348,7 @@ section.facility {
   width: 200px;
   color: var(--fontColor);
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -6761,7 +6761,7 @@ section.facility {
   width: 200px;
   color: var(--fontColor);
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -7174,7 +7174,7 @@ section.facility {
   width: 200px;
   color: var(--fontColor);
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -7587,7 +7587,7 @@ section.facility {
   width: 200px;
   color: var(--fontColor);
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -8145,6 +8145,7 @@ section.facility {
   -ms-justify-content: center;
   -o-justify-content: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 @media (max-width: 991px) {
@@ -8186,9 +8187,9 @@ section.facility {
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording {
-  width: 50%;
+  width: 40%;
   height: 100%;
-  padding: 40px 0 0 0;
+  padding: 3rem 0 0 0;
 }
 
 @media (max-width: 991px) {
@@ -8207,12 +8208,12 @@ section.facility {
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big {
-  margin-bottom: 16px;
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 991px) {
   .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -8224,7 +8225,7 @@ section.facility {
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big h2 {
   font-size: 2.5rem;
-  margin-bottom: 8px;
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 991px) {
@@ -8252,7 +8253,7 @@ section.facility {
 }
 
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .big .title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: var(--fontColor);
   letter-spacing: 0.5px;
 }
@@ -8266,10 +8267,10 @@ section.facility {
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
   place-items: unset;
-  gap: 32px;
+  gap: 1.75rem;
   /* for firefox */
   overflow-y: scroll;
   scrollbar-color: var(--orange) transparent;
@@ -8336,8 +8337,23 @@ section.facility {
   }
 }
 
+.team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 1fr;
+  place-items: unset;
+  gap: 2rem;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item {
+    gap: 0.75rem;
+  }
+}
+
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item h3 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   margin-bottom: 12px;
 }
 
@@ -8470,7 +8486,7 @@ section.facility {
 
 .team-member .team-panel .panel-table:last-child .wrapper img {
   height: max-content;
-  max-width: 50vw;
+  max-width: 40vw;
   width: fit-content;
 }
 

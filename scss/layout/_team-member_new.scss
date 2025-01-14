@@ -74,11 +74,11 @@
 
   .team-panel {
     // input[type="radio"] {
-    //   @include s-tabs(1.25rem, "#form-tab", ".panel", "#panel");
+    //   @include s-tabs(1.125rem, "#form-tab", ".panel", "#panel");
     // }
     &.tpe {
       input[type="radio"] {
-        @include s-tabs(1.25rem, "#form-tab-tpe", ".panel-tpe", "#panel-tpe");
+        @include s-tabs(1.125rem, "#form-tab-tpe", ".panel-tpe", "#panel-tpe");
       }
       @include for-phone {
         input[type="radio"] + label {
@@ -89,7 +89,7 @@
     &.ntpc {
       input[type="radio"] {
         @include s-tabs(
-          1.25rem,
+          1.125rem,
           "#form-tab-ntpc",
           ".panel-ntpc",
           "#panel-ntpc"
@@ -103,7 +103,7 @@
     }
     &.tyn {
       input[type="radio"] {
-        @include s-tabs(1.25rem, "#form-tab-tyn", ".panel-tyn", "#panel-tyn");
+        @include s-tabs(1.125rem, "#form-tab-tyn", ".panel-tyn", "#panel-tyn");
       }
       @include for-phone {
         input[type="radio"] + label {
@@ -113,7 +113,7 @@
     }
     &.txg {
       input[type="radio"] {
-        @include s-tabs(1.25rem, "#form-tab-txg", ".panel-txg", "#panel-txg");
+        @include s-tabs(1.125rem, "#form-tab-txg", ".panel-txg", "#panel-txg");
       }
       @include for-phone {
         input[type="radio"] + label {
@@ -123,7 +123,7 @@
     }
     &.tnn {
       input[type="radio"] {
-        @include s-tabs(1.25rem, "#form-tab-tnn", ".panel-tnn", "#panel-tnn");
+        @include s-tabs(1.125rem, "#form-tab-tnn", ".panel-tnn", "#panel-tnn");
       }
       @include for-phone {
         input[type="radio"] + label {
@@ -249,7 +249,7 @@
             );
             padding: 0 100px;
             height: 520px;
-            @include flexbox(row, end, center);
+            @include flexbox-gap(row, end, center, 1rem);
             @include for-largepad {
               padding: 0 10vw;
               height: 35vh;
@@ -264,9 +264,9 @@
             }
 
             .wording {
-              width: 50%;
+              width: 40%;
               height: 100%;
-              padding: 40px 0 0 0;
+              padding: 3rem 0 0 0;
               @include for-largepad {
                 padding: 24px 0;
                 width: 40%;
@@ -277,16 +277,16 @@
                 border-top: 1px solid var(--border);
               }
               .big {
-                margin-bottom: 16px;
+                margin-bottom: 0.75rem;
                 @include for-largepad {
-                  margin-bottom: 8px;
+                  margin-bottom: 0.5rem;
                 }
                 @include for-phone {
                   text-align: center;
                 }
                 h2 {
                   font-size: 2.5rem;
-                  margin-bottom: 8px;
+                  margin-bottom: 0.25rem;
                   @include for-largepad {
                     font-size: 1.5rem;
                     margin-bottom: 4px;
@@ -303,7 +303,7 @@
                   }
                 }
                 .title {
-                  font-size: 1.25rem;
+                  font-size: 1.125rem;
                   color: var(--fontColor);
                   letter-spacing: 0.5px;
                   @include for-largepad {
@@ -312,7 +312,7 @@
                 }
               }
               .small {
-                @include grid(row, 1fr 1fr, 1fr 1fr, unset, 32px);
+                @include grid(row, 1fr, repeat(4, auto), unset, 1.75rem);
                 @include mac-scrollbar-style;
                 height: 75%;
                 overflow: auto;
@@ -338,8 +338,12 @@
                   max-height: 35vh;
                 }
                 .item {
+                  @include grid(row, 80px 1fr, 1fr, unset, 2rem);
+                  @include for-phone {
+                    gap: 0.75rem;
+                  }
                   h3 {
-                    font-size: 1.75rem;
+                    font-size: 1.25rem;
                     margin-bottom: 12px;
                     @include for-largepad {
                       font-size: 1.125rem;
@@ -407,7 +411,7 @@
 
             img {
               height: max-content;
-              max-width: 50vw;
+              max-width: 40vw;
               width: fit-content;
               @include for-phone {
                 width: 100%;
