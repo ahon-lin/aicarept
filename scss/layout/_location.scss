@@ -176,6 +176,33 @@ ul.location {
     //   }
     //  }
   }
+  &.recommend {
+    grid-template-columns: 1fr;
+    li {
+      background: var(--orange-gradient);
+      border-radius: 12px;
+      box-shadow: 2px 2px 5px var(--boxShadow);
+      border: 1px solid var(--white);
+      @include ease(0.2s);
+      h3 {
+        margin-top: 0;
+      }
+      a.nav {
+        color: var(--white);
+        .arrow {
+          background: var(--white);
+          &::after {
+            background: var(--white);
+          }
+        }
+      }
+      &:hover {
+        filter: brightness(1.05);
+
+        border-radius: 32px;
+      }
+    }
+  }
 }
 section.facility {
   padding: 40px 100px 40px 100px;

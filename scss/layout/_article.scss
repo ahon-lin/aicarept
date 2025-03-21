@@ -6,7 +6,7 @@
   margin-top: 64px;
 }
 .articleContainer {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   @include flexbox(column, center, center);
   padding: 40px;
   padding-top: 0px;
@@ -43,9 +43,8 @@
   }
   h3 {
     font-size: 1.75rem;
-    margin-bottom: 16px;
+    margin: 2rem 0 1rem 0;
     @include for-phone {
-      margin-bottom: 16px;
       font-size: 1.5rem;
     }
   }
@@ -65,11 +64,17 @@
       margin-bottom: 40px;
       img {
         max-width: 800px;
+        &.outline-img {
+          border: 1px solid var(--border);
+        }
       }
       h4 {
         color: var(--orange);
         font-size: 1.25rem;
         letter-spacing: 0.5px;
+      }
+      p {
+        padding: 0;
       }
     }
 
@@ -107,6 +112,10 @@
         h3 {
           line-height: 2.5rem;
         }
+        h4 {
+          font-size: 1.25rem;
+          margin-bottom: 8px;
+        }
         p {
           padding: 0;
         }
@@ -136,8 +145,8 @@
         }
       }
       &.item {
-        grid-template-columns: repeat(4, 160px);
-        grid-template-rows: 160px;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 200px;
         gap: 16px;
         justify-content: space-around;
         @include for-pad {
@@ -150,11 +159,22 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 24px;
+          padding: 1rem;
           text-align: center;
           font-size: 1.125rem;
           line-height: 1.25;
           letter-spacing: 0.5px;
+          &.f-col {
+            flex-direction: column;
+            p {
+              font-size: 1rem;
+              line-height: 1.25;
+              text-align: center;
+              @include for-phone {
+                font-size: 0.875rem;
+              }
+            }
+          }
         }
       }
       // reason
@@ -172,9 +192,7 @@
             grid-template-columns: 1fr;
             gap: 8px;
           }
-          &:first-child {
-            border-top: 1px dashed var(--border);
-          }
+
           h4 {
             border-right: 3px solid var(--orange);
             font-size: 1.25rem;
@@ -188,6 +206,15 @@
               width: fit-content;
             }
           }
+        }
+        & > li:first-child {
+          border-top: 1px dashed var(--border);
+        }
+      }
+      &.g-row {
+        li {
+          grid-auto-flow: row;
+          grid-template-columns: 1fr;
         }
       }
       // video
@@ -215,9 +242,10 @@
             letter-spacing: 0.5px;
           }
           h5 {
-            font-size: 1rem;
-            margin-top: 8px;
-            border: 1px solid var(--border);
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 8px 0;
+            border: 2px solid var(--green);
             color: var(--fontColor);
             padding: 4px;
             width: fit-content;
@@ -226,6 +254,41 @@
           p {
             font-size: 1rem;
             letter-spacing: 0;
+          }
+        }
+        &.col-1 {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, 1fr);
+          background-color: var(--border);
+          gap: 1px;
+          li {
+            grid-template-columns: 1fr;
+            background-color: var(--white);
+          }
+        }
+      }
+      &.sub-list {
+        margin-left: 48px;
+        margin-bottom: unset;
+        li {
+          position: relative;
+          list-style: none;
+          border: unset;
+          gap: 0;
+          &::before {
+            width: 1.25rem;
+            height: 1.25rem;
+            content: "/";
+            position: absolute;
+            color: var(--orange);
+            font-weight: 800;
+            left: -1rem;
+            top: 0.75rem;
+            font-size: 1.5rem;
+          }
+          h4 {
+            padding-right: unset;
+            border: unset;
           }
         }
       }
@@ -317,6 +380,10 @@
   }
   .reservation-btn {
     color: var(--orange);
+  }
+
+  &.treatment {
+    padding-top: 120px;
   }
 }
 .share {
@@ -412,8 +479,11 @@ a.yo-link {
   }
   iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     max-width: 800px;
