@@ -548,6 +548,12 @@ p.note {
   display: none !important;
 }
 
+hr {
+  background-color: var(--border);
+  border: none;
+  height: 1px;
+}
+
 .launchScreen {
   position: fixed;
   background: var(--white);
@@ -3908,10 +3914,22 @@ p.note {
 
 .articleContainer .reservation-btn {
   color: var(--orange);
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.articleContainer .reservation-btn:hover {
+  filter: brightness(1.05);
 }
 
 .articleContainer.treatment {
   padding-top: 120px;
+}
+
+.articleContainer hr {
+  margin-bottom: 2rem;
 }
 
 .share {
@@ -4333,10 +4351,10 @@ ul.location.recommend {
 }
 
 ul.location.recommend li {
-  background: var(--orange-gradient);
+  background: var(--tertiary-container);
   border-radius: 12px;
   box-shadow: 2px 2px 5px var(--boxShadow);
-  border: 1px solid var(--white);
+  border: 2px solid var(--orange);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -4345,23 +4363,34 @@ ul.location.recommend li {
 
 ul.location.recommend li h3 {
   margin-top: 0;
+  line-height: 1.5;
 }
 
 ul.location.recommend li a.nav {
-  color: var(--white);
+  background-color: var(--white);
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: var(--orange);
 }
 
 ul.location.recommend li a.nav .arrow {
-  background: var(--white);
+  background: var(--orange);
 }
 
 ul.location.recommend li a.nav .arrow::after {
-  background: var(--white);
+  background: var(--orange);
 }
 
 ul.location.recommend li:hover {
   filter: brightness(1.05);
   border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+  ul.location.recommend li {
+    padding: 16px;
+    padding-bottom: 80px;
+  }
 }
 
 section.facility {

@@ -380,10 +380,18 @@
   }
   .reservation-btn {
     color: var(--orange);
+    @include ease(0.1s);
+    &:hover {
+      filter: brightness(1.05);
+    }
   }
 
   &.treatment {
     padding-top: 120px;
+  }
+
+  hr {
+    margin-bottom: 2rem;
   }
 }
 .share {

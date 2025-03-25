@@ -170,3 +170,9 @@ p.note {
 .d-none {
   display: none !important;
 }
+
+hr {
+  background-color: var(--border);
+  border: none;
+  height: 1px;
+}
