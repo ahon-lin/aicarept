@@ -54,7 +54,8 @@ h2.city-title {
 }
 
 .ar-group {
-  @include flexbox-gap(row, center, center, 16px);
+  // @include flexbox-gap(row, center, center, 16px);
+  @include grid(row, repeat(3, 1fr), auto, normal, 16px);
   @include for-desktop {
     @include grid(row, repeat(3, 1fr), auto, normal, 8px);
   }

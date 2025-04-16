@@ -131,6 +131,16 @@
         }
       }
     }
+    &.khh {
+      input[type="radio"] {
+        @include s-tabs(1.125rem, "#form-tab-khh", ".panel-khh", "#panel-khh");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
     width: 100%;
     @include flexbox(row, center, center);
     gap: 16px;

@@ -38,3 +38,11 @@ $(".arc-btn5").click(function () {
     "medium"
   );
 });
+$(".arc-btn6").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".ct-6").offset().top,
+    },
+    "medium"
+  );
+});

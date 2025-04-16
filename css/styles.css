@@ -4140,26 +4140,11 @@ h2.city-title {
 }
 
 .ar-group {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  -o-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  place-items: normal;
   gap: 16px;
 }
 
@@ -8108,6 +8093,419 @@ section.facility {
 
 @media (max-width: 480px) {
   .team-member .team-panel.tnn input[type="radio"] + label {
+    width: 28%;
+  }
+}
+
+.team-member .team-panel.khh input[type="radio"] {
+  display: none;
+}
+
+.team-member .team-panel.khh input[type="radio"]:checked + label {
+  border-color: var(--orange);
+  color: var(--black);
+}
+
+.team-member .team-panel.khh input[type="radio"] + label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  width: 200px;
+  color: var(--fontColor);
+  cursor: pointer;
+  font-size: 1.125rem;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 16px 4px;
+  border-radius: 100px;
+  border: 2px solid var(--lightGrayf3);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.khh input[type="radio"] + label {
+    font-size: 1rem;
+  }
+}
+
+.team-member .team-panel.khh input[type="radio"] + label:hover {
+  border-color: var(--orange);
+  color: var(--black);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh1:checked ~ .panel-khh #panel-khh-1 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh2:checked ~ .panel-khh #panel-khh-2 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh3:checked ~ .panel-khh #panel-khh-3 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh4:checked ~ .panel-khh #panel-khh-4 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh5:checked ~ .panel-khh #panel-khh-5 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh6:checked ~ .panel-khh #panel-khh-6 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh7:checked ~ .panel-khh #panel-khh-7 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh8:checked ~ .panel-khh #panel-khh-8 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh9:checked ~ .panel-khh #panel-khh-9 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh10:checked ~ .panel-khh #panel-khh-10 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh11:checked ~ .panel-khh #panel-khh-11 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh12:checked ~ .panel-khh #panel-khh-12 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh13:checked ~ .panel-khh #panel-khh-13 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh14:checked ~ .panel-khh #panel-khh-14 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh15:checked ~ .panel-khh #panel-khh-15 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh16:checked ~ .panel-khh #panel-khh-16 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh17:checked ~ .panel-khh #panel-khh-17 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh18:checked ~ .panel-khh #panel-khh-18 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh19:checked ~ .panel-khh #panel-khh-19 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh20:checked ~ .panel-khh #panel-khh-20 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh21:checked ~ .panel-khh #panel-khh-21 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh22:checked ~ .panel-khh #panel-khh-22 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh23:checked ~ .panel-khh #panel-khh-23 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh24:checked ~ .panel-khh #panel-khh-24 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh25:checked ~ .panel-khh #panel-khh-25 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh26:checked ~ .panel-khh #panel-khh-26 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh27:checked ~ .panel-khh #panel-khh-27 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh28:checked ~ .panel-khh #panel-khh-28 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh29:checked ~ .panel-khh #panel-khh-29 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh30:checked ~ .panel-khh #panel-khh-30 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh31:checked ~ .panel-khh #panel-khh-31 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh32:checked ~ .panel-khh #panel-khh-32 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh33:checked ~ .panel-khh #panel-khh-33 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh34:checked ~ .panel-khh #panel-khh-34 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh35:checked ~ .panel-khh #panel-khh-35 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh36:checked ~ .panel-khh #panel-khh-36 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh37:checked ~ .panel-khh #panel-khh-37 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh38:checked ~ .panel-khh #panel-khh-38 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh39:checked ~ .panel-khh #panel-khh-39 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh40:checked ~ .panel-khh #panel-khh-40 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh41:checked ~ .panel-khh #panel-khh-41 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh42:checked ~ .panel-khh #panel-khh-42 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh43:checked ~ .panel-khh #panel-khh-43 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh44:checked ~ .panel-khh #panel-khh-44 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh45:checked ~ .panel-khh #panel-khh-45 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh46:checked ~ .panel-khh #panel-khh-46 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh47:checked ~ .panel-khh #panel-khh-47 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh48:checked ~ .panel-khh #panel-khh-48 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh49:checked ~ .panel-khh #panel-khh-49 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.khh input[type="radio"]#form-tab-khh50:checked ~ .panel-khh #panel-khh-50 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.khh input[type="radio"] + label {
     width: 28%;
   }
 }
