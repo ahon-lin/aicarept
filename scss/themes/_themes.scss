@@ -10,6 +10,7 @@ body {
 body {
   overflow-x: hidden;
   @include mac-scrollbar-style;
+  letter-spacing: 0.025rem;
 }
 
 *,

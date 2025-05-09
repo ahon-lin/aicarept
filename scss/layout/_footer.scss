@@ -211,11 +211,11 @@
     .sitemap {
       flex: 1;
       display: flex;
-      gap: 24px;
-      justify-content: center;
+      gap: 48px;
+      justify-content: end;
       flex-wrap: wrap;
       border-right: 1px solid var(--lightGraycc);
-      padding: 0 50px;
+      padding-right: 48px;
 
       @include for-pro-12-p {
         justify-content: flex-start;
@@ -231,7 +231,7 @@
 
       @include for-phone {
         @include grid(row, repeat(4, 1fr), auto, unset, 8px);
-        padding: 0 32px;
+        padding: 0 24px;
         width: 100%;
         margin-bottom: 24px;
         text-align: center;
@@ -250,7 +250,7 @@
           }
         }
         @include flexbox(column, start, start);
-        gap: 8px;
+        gap: 12px;
         @include for-phone {
           nav {
             width: 100%;
@@ -263,10 +263,10 @@
     .contact {
       flex: 1;
       display: flex;
-      gap: 24px;
-      justify-content: center;
+      gap: 48px;
+      justify-content: start;
       flex-wrap: wrap;
-      padding: 0 50px;
+      padding-left: 48px;
 
       @include for-pro-12-p {
         justify-content: flex-start;
@@ -281,10 +281,10 @@
       .service-hours {
         display: grid;
         grid-template-rows: repeat(auto-fit, minmax(16px, max-content));
-        gap: 8px;
+        gap: 12px;
 
         & > h4 {
-          @include flexbox-gap(row, center, flex-start, 6px);
+          @include flexbox-gap(row, center, flex-start, 4px);
           @include for-pad {
             justify-content: start;
           }
@@ -297,19 +297,41 @@
         }
       }
 
-      .qrcode {
-        @include flexbox-gap(row, center, flex-start, 8px);
+      .sm-list {
+        @include flexbox-gap(row, start, flex-start, 0.5rem);
 
         @include for-phone {
           justify-content: center;
           width: 100%;
+          gap: 1rem;
         }
 
         & > a {
           @include ease(0.2s);
+          padding: 0.5rem;
+          border: 1px solid var(--border);
+          border-radius: 4px;
+          font-size: 1.75rem;
+          width: 48px;
+          height: 48px;
+          @include flexbox(row, center, center);
+          @include for-pro-12-p {
+            font-size: 1.75rem;
+            width: 48px;
+          }
 
           &:hover {
             @include scale(1.1);
+            border-color: (--lightGraycc);
+            &.fa-facebook {
+              color: #1877f2;
+            }
+            &.fa-line {
+              color: #21b94e;
+            }
+            &.fa-youtube {
+              color: #ff0000;
+            }
           }
         }
       }
@@ -321,7 +343,6 @@
     padding: 12px;
     text-align: center;
     color: var(--white);
-    letter-spacing: 0.1rem;
     @include for-phone {
       margin-bottom: 88px;
     }

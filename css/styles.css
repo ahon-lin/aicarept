@@ -391,6 +391,7 @@ body {
   scrollbar-color: var(--orange) transparent;
   scrollbar-width: thin;
   /* for firefox end */
+  letter-spacing: 0.025rem;
 }
 
 body::-webkit-scrollbar {
@@ -2788,11 +2789,11 @@ hr {
 .colophon-bottom .sitemap {
   flex: 1;
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  gap: 48px;
+  justify-content: end;
   flex-wrap: wrap;
   border-right: 1px solid var(--lightGraycc);
-  padding: 0 50px;
+  padding-right: 48px;
 }
 
 @media (max-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
@@ -2820,7 +2821,7 @@ hr {
     grid-template-rows: auto;
     place-items: unset;
     gap: 8px;
-    padding: 0 32px;
+    padding: 0 24px;
     width: 100%;
     margin-bottom: 24px;
     text-align: center;
@@ -2854,7 +2855,7 @@ hr {
   -ms-justify-content: start;
   -o-justify-content: start;
   justify-content: start;
-  gap: 8px;
+  gap: 12px;
 }
 
 .colophon-bottom .sitemap .s-menu nav {
@@ -2875,10 +2876,10 @@ hr {
 .colophon-bottom .contact {
   flex: 1;
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  gap: 48px;
+  justify-content: start;
   flex-wrap: wrap;
-  padding: 0 50px;
+  padding-left: 48px;
 }
 
 @media (max-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
@@ -2898,7 +2899,7 @@ hr {
 .colophon-bottom .contact .service-hours {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(16px, max-content));
-  gap: 8px;
+  gap: 12px;
 }
 
 .colophon-bottom .contact .customer-service > h4,
@@ -2923,7 +2924,7 @@ hr {
   -ms-justify-content: flex-start;
   -o-justify-content: flex-start;
   justify-content: flex-start;
-  gap: 6px;
+  gap: 4px;
 }
 
 @media (max-width: 768px) {
@@ -2947,7 +2948,49 @@ hr {
   }
 }
 
-.colophon-bottom .contact .qrcode {
+.colophon-bottom .contact .sm-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: start;
+  -moz-align-items: start;
+  -ms-align-items: start;
+  -o-align-items: start;
+  align-items: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .colophon-bottom .contact .sm-list {
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+}
+
+.colophon-bottom .contact .sm-list > a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1.75rem;
+  width: 48px;
+  height: 48px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -2963,33 +3006,38 @@ hr {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
 }
 
-@media (max-width: 480px) {
-  .colophon-bottom .contact .qrcode {
-    justify-content: center;
-    width: 100%;
+@media (max-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+  .colophon-bottom .contact .sm-list > a {
+    font-size: 1.75rem;
+    width: 48px;
   }
 }
 
-.colophon-bottom .contact .qrcode > a {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.colophon-bottom .contact .qrcode > a:hover {
+.colophon-bottom .contact .sm-list > a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+  border-color: --lightGraycc;
+}
+
+.colophon-bottom .contact .sm-list > a:hover.fa-facebook {
+  color: #1877f2;
+}
+
+.colophon-bottom .contact .sm-list > a:hover.fa-line {
+  color: #21b94e;
+}
+
+.colophon-bottom .contact .sm-list > a:hover.fa-youtube {
+  color: #ff0000;
 }
 
 .colophon .copyright-box {
@@ -2997,7 +3045,6 @@ hr {
   padding: 12px;
   text-align: center;
   color: var(--white);
-  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 480px) {
