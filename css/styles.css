@@ -3043,7 +3043,7 @@ hr {
   width: 40px;
   height: 45px;
   right: 22px;
-  z-index: 100;
+  z-index: 10;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
