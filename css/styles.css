@@ -8930,7 +8930,7 @@ section.facility {
 .team-member .team-panel .panel-table .swipe .swiper-slide .wording .small .item {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 88px 1fr;
   grid-template-rows: 1fr;
   place-items: unset;
   gap: 2rem;
