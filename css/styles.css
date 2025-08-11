@@ -7318,6 +7318,419 @@ section.facility {
   }
 }
 
+.team-member .team-panel.hsh input[type="radio"] {
+  display: none;
+}
+
+.team-member .team-panel.hsh input[type="radio"]:checked + label {
+  border-color: var(--orange);
+  color: var(--black);
+}
+
+.team-member .team-panel.hsh input[type="radio"] + label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  width: 200px;
+  color: var(--fontColor);
+  cursor: pointer;
+  font-size: 1.125rem;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 16px 4px;
+  border-radius: 100px;
+  border: 2px solid var(--lightGrayf3);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.hsh input[type="radio"] + label {
+    font-size: 1rem;
+  }
+}
+
+.team-member .team-panel.hsh input[type="radio"] + label:hover {
+  border-color: var(--orange);
+  color: var(--black);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh1:checked ~ .panel-hsh #panel-hsh-1 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh2:checked ~ .panel-hsh #panel-hsh-2 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh3:checked ~ .panel-hsh #panel-hsh-3 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh4:checked ~ .panel-hsh #panel-hsh-4 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh5:checked ~ .panel-hsh #panel-hsh-5 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh6:checked ~ .panel-hsh #panel-hsh-6 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh7:checked ~ .panel-hsh #panel-hsh-7 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh8:checked ~ .panel-hsh #panel-hsh-8 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh9:checked ~ .panel-hsh #panel-hsh-9 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh10:checked ~ .panel-hsh #panel-hsh-10 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh11:checked ~ .panel-hsh #panel-hsh-11 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh12:checked ~ .panel-hsh #panel-hsh-12 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh13:checked ~ .panel-hsh #panel-hsh-13 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh14:checked ~ .panel-hsh #panel-hsh-14 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh15:checked ~ .panel-hsh #panel-hsh-15 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh16:checked ~ .panel-hsh #panel-hsh-16 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh17:checked ~ .panel-hsh #panel-hsh-17 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh18:checked ~ .panel-hsh #panel-hsh-18 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh19:checked ~ .panel-hsh #panel-hsh-19 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh20:checked ~ .panel-hsh #panel-hsh-20 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh21:checked ~ .panel-hsh #panel-hsh-21 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh22:checked ~ .panel-hsh #panel-hsh-22 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh23:checked ~ .panel-hsh #panel-hsh-23 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh24:checked ~ .panel-hsh #panel-hsh-24 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh25:checked ~ .panel-hsh #panel-hsh-25 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh26:checked ~ .panel-hsh #panel-hsh-26 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh27:checked ~ .panel-hsh #panel-hsh-27 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh28:checked ~ .panel-hsh #panel-hsh-28 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh29:checked ~ .panel-hsh #panel-hsh-29 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh30:checked ~ .panel-hsh #panel-hsh-30 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh31:checked ~ .panel-hsh #panel-hsh-31 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh32:checked ~ .panel-hsh #panel-hsh-32 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh33:checked ~ .panel-hsh #panel-hsh-33 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh34:checked ~ .panel-hsh #panel-hsh-34 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh35:checked ~ .panel-hsh #panel-hsh-35 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh36:checked ~ .panel-hsh #panel-hsh-36 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh37:checked ~ .panel-hsh #panel-hsh-37 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh38:checked ~ .panel-hsh #panel-hsh-38 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh39:checked ~ .panel-hsh #panel-hsh-39 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh40:checked ~ .panel-hsh #panel-hsh-40 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh41:checked ~ .panel-hsh #panel-hsh-41 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh42:checked ~ .panel-hsh #panel-hsh-42 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh43:checked ~ .panel-hsh #panel-hsh-43 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh44:checked ~ .panel-hsh #panel-hsh-44 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh45:checked ~ .panel-hsh #panel-hsh-45 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh46:checked ~ .panel-hsh #panel-hsh-46 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh47:checked ~ .panel-hsh #panel-hsh-47 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh48:checked ~ .panel-hsh #panel-hsh-48 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh49:checked ~ .panel-hsh #panel-hsh-49 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.hsh input[type="radio"]#form-tab-hsh50:checked ~ .panel-hsh #panel-hsh-50 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.hsh input[type="radio"] + label {
+    width: 28%;
+  }
+}
+
 .team-member .team-panel.txg input[type="radio"] {
   display: none;
 }

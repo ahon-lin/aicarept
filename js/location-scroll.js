@@ -46,3 +46,11 @@ $(".arc-btn6").click(function () {
     "medium"
   );
 });
+$(".arc-btn7").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".ct-7").offset().top,
+    },
+    "medium"
+  );
+});
