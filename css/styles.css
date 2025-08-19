@@ -3795,6 +3795,10 @@ hr {
   border: unset;
 }
 
+.articleContainer .content .yt-container {
+  margin-top: 0.5rem;
+}
+
 .articleContainer h2 {
   font-size: 1.75rem;
   font-weight: 500;
