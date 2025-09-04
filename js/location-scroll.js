@@ -54,3 +54,11 @@ $(".arc-btn7").click(function () {
     "medium"
   );
 });
+$(".arc-btn8").click(function () {
+  $("html,body").animate(
+    {
+      scrollTop: $(".ct-8").offset().top,
+    },
+    "medium"
+  );
+});

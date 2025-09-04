@@ -121,6 +121,16 @@
         }
       }
     }
+    &.mia {
+      input[type="radio"] {
+        @include s-tabs(1.125rem, "#form-tab-mia", ".panel-mia", "#panel-mia");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
     &.txg {
       input[type="radio"] {
         @include s-tabs(1.125rem, "#form-tab-txg", ".panel-txg", "#panel-txg");

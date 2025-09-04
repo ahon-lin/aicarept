@@ -4196,7 +4196,7 @@ h2.city-title {
 .ar-group {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   place-items: normal;
   gap: 16px;
@@ -4206,7 +4206,7 @@ h2.city-title {
   .ar-group {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     place-items: normal;
     gap: 8px;
@@ -7734,6 +7734,419 @@ section.facility {
 
 @media (max-width: 480px) {
   .team-member .team-panel.hsh input[type="radio"] + label {
+    width: 28%;
+  }
+}
+
+.team-member .team-panel.mia input[type="radio"] {
+  display: none;
+}
+
+.team-member .team-panel.mia input[type="radio"]:checked + label {
+  border-color: var(--orange);
+  color: var(--black);
+}
+
+.team-member .team-panel.mia input[type="radio"] + label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  width: 200px;
+  color: var(--fontColor);
+  cursor: pointer;
+  font-size: 1.125rem;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 16px 4px;
+  border-radius: 100px;
+  border: 2px solid var(--lightGrayf3);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.mia input[type="radio"] + label {
+    font-size: 1rem;
+  }
+}
+
+.team-member .team-panel.mia input[type="radio"] + label:hover {
+  border-color: var(--orange);
+  color: var(--black);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia1:checked ~ .panel-mia #panel-mia-1 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia2:checked ~ .panel-mia #panel-mia-2 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia3:checked ~ .panel-mia #panel-mia-3 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia4:checked ~ .panel-mia #panel-mia-4 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia5:checked ~ .panel-mia #panel-mia-5 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia6:checked ~ .panel-mia #panel-mia-6 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia7:checked ~ .panel-mia #panel-mia-7 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia8:checked ~ .panel-mia #panel-mia-8 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia9:checked ~ .panel-mia #panel-mia-9 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia10:checked ~ .panel-mia #panel-mia-10 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia11:checked ~ .panel-mia #panel-mia-11 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia12:checked ~ .panel-mia #panel-mia-12 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia13:checked ~ .panel-mia #panel-mia-13 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia14:checked ~ .panel-mia #panel-mia-14 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia15:checked ~ .panel-mia #panel-mia-15 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia16:checked ~ .panel-mia #panel-mia-16 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia17:checked ~ .panel-mia #panel-mia-17 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia18:checked ~ .panel-mia #panel-mia-18 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia19:checked ~ .panel-mia #panel-mia-19 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia20:checked ~ .panel-mia #panel-mia-20 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia21:checked ~ .panel-mia #panel-mia-21 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia22:checked ~ .panel-mia #panel-mia-22 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia23:checked ~ .panel-mia #panel-mia-23 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia24:checked ~ .panel-mia #panel-mia-24 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia25:checked ~ .panel-mia #panel-mia-25 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia26:checked ~ .panel-mia #panel-mia-26 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia27:checked ~ .panel-mia #panel-mia-27 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia28:checked ~ .panel-mia #panel-mia-28 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia29:checked ~ .panel-mia #panel-mia-29 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia30:checked ~ .panel-mia #panel-mia-30 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia31:checked ~ .panel-mia #panel-mia-31 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia32:checked ~ .panel-mia #panel-mia-32 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia33:checked ~ .panel-mia #panel-mia-33 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia34:checked ~ .panel-mia #panel-mia-34 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia35:checked ~ .panel-mia #panel-mia-35 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia36:checked ~ .panel-mia #panel-mia-36 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia37:checked ~ .panel-mia #panel-mia-37 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia38:checked ~ .panel-mia #panel-mia-38 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia39:checked ~ .panel-mia #panel-mia-39 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia40:checked ~ .panel-mia #panel-mia-40 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia41:checked ~ .panel-mia #panel-mia-41 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia42:checked ~ .panel-mia #panel-mia-42 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia43:checked ~ .panel-mia #panel-mia-43 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia44:checked ~ .panel-mia #panel-mia-44 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia45:checked ~ .panel-mia #panel-mia-45 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia46:checked ~ .panel-mia #panel-mia-46 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia47:checked ~ .panel-mia #panel-mia-47 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia48:checked ~ .panel-mia #panel-mia-48 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia49:checked ~ .panel-mia #panel-mia-49 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.mia input[type="radio"]#form-tab-mia50:checked ~ .panel-mia #panel-mia-50 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.mia input[type="radio"] + label {
     width: 28%;
   }
 }
