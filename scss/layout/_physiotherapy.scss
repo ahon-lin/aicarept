@@ -87,17 +87,27 @@
         }
       }
       h3 {
-        width: 100%;
+        position: relative;
         font-size: 1.5rem;
         line-height: 2.5rem;
         letter-spacing: 1.15px;
         margin-bottom: 0.5rem;
-        border-bottom: 2px solid var(--lightGreen);
+
+        margin-left: 1rem;
         @include for-largepad {
           line-height: 2rem;
           padding-bottom: 4px;
           margin-top: 1.5rem;
           font-size: 1.25rem;
+        }
+        &::before {
+          position: absolute;
+          left: -1rem;
+          top: 50%;
+          width: 4px;
+          height: 4px;
+          background-color: var(--orange);
+          content: "";
         }
       }
       p.text-body {
