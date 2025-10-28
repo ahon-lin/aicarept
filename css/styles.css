@@ -473,6 +473,17 @@ button {
   letter-spacing: 0.25px;
 }
 
+button.ghost-btn {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--orange);
+}
+
+button.ghost-btn:hover {
+  color: var(--orange-focus);
+}
+
 img {
   width: 100%;
   height: 100%;

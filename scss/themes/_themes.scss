@@ -58,6 +58,14 @@ button {
   padding: 0;
   cursor: pointer;
   letter-spacing: 0.25px;
+  &.ghost-btn {
+    @include link-default;
+    cursor: pointer;
+    color: var(--orange);
+    &:hover {
+      color: var(--orange-focus);
+    }
+  }
 }
 
 img {
