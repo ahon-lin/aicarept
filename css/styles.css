@@ -1899,19 +1899,22 @@ hr {
   visibility: hidden;
 }
 
-.team {
+.team,
+.q-section {
   position: relative;
   padding-top: 56px;
   display: flex;
 }
 
 @media (max-width: 480px) {
-  .team {
+  .team,
+  .q-section {
     padding-top: 100px;
   }
 }
 
-.team article {
+.team article,
+.q-section article {
   position: absolute;
   display: grid;
   place-items: center;
@@ -1926,32 +1929,37 @@ hr {
 }
 
 @media (max-width: 480px) {
-  .team article {
+  .team article,
+  .q-section article {
     padding: 0 25px;
   }
 }
 
-.team article > h1 {
+.team article > h2,
+.q-section article > h2 {
   position: relative;
   color: var(--black);
   margin-bottom: 32px;
 }
 
 @media (max-width: 1024px) {
-  .team article > h1 {
+  .team article > h2,
+  .q-section article > h2 {
     font-size: 1.5rem;
     margin-bottom: 24px;
   }
 }
 
 @media (max-width: 480px) {
-  .team article > h1 {
+  .team article > h2,
+  .q-section article > h2 {
     font-size: 1.125rem;
     margin-bottom: 24px;
   }
 }
 
-.team article > h1:after {
+.team article > h2:after,
+.q-section article > h2:after {
   content: "";
   position: absolute;
   background: var(--orange);
@@ -1962,12 +1970,14 @@ hr {
 }
 
 @media (max-width: 480px) {
-  .team article > h1:after {
+  .team article > h2:after,
+  .q-section article > h2:after {
     height: 3px;
   }
 }
 
-.team article > div {
+.team article > div,
+.q-section article > div {
   place-self: baseline;
   font-size: 1.25rem;
   text-align: center;
@@ -1979,7 +1989,8 @@ hr {
 }
 
 @media (max-width: 1024px) {
-  .team article > div {
+  .team article > div,
+  .q-section article > div {
     font-size: 0.875rem;
     letter-spacing: 0.15rem;
     line-height: 1.25rem;
@@ -1987,13 +1998,15 @@ hr {
 }
 
 @media (max-width: 480px) {
-  .team article > div {
+  .team article > div,
+  .q-section article > div {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
-.team a.view-btn {
+.team a.view-btn,
+.q-section a.view-btn {
   border: 1px solid var(--orange);
   color: var(--orange);
   font-size: 1.25rem;
@@ -2007,25 +2020,65 @@ hr {
   margin-top: 12px;
 }
 
-.team a.view-btn:hover {
+.team a.view-btn:hover,
+.q-section a.view-btn:hover {
   background: var(--orange);
   color: var(--white);
 }
 
 @media (max-width: 768px) {
-  .team a.view-btn {
+  .team a.view-btn,
+  .q-section a.view-btn {
     font-size: 1rem;
   }
 }
 
-.team > img {
+.team > img,
+.q-section > img {
   margin-top: 120px;
 }
 
 @media (max-width: 991px) {
-  .team > img {
-    margin-top: 120px;
+  .team > img,
+  .q-section > img {
+    margin-top: 10rem;
   }
+}
+
+.q-section {
+  padding: 5rem 1rem;
+  background-image: url("../../image/bg/doctor-bg.png");
+  background-position: top;
+  /* 置中 */
+  background-repeat: no-repeat;
+}
+
+.q-section article {
+  position: relative;
+}
+
+.q-section .image-vs-bg {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  /* 設定背景圖 */
+  background-image: url("../../image/bg/website-treat-pt4.webp");
+  background-size: cover;
+  /* 填滿容器 */
+  background-position: center;
+  /* 置中 */
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+}
+
+.q-section h3 {
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.q-section p {
+  margin: 1rem 0;
+  max-width: 35rem;
 }
 
 .digital {
@@ -4784,6 +4837,10 @@ ul.location.location-v2 li .info-section .info-item .sub-label {
   margin-bottom: 1rem;
 }
 
+ul.location.location-v2 li .info-section .info-item .sub-label.m-top {
+  margin-top: 2rem;
+}
+
 ul.location.location-v2 li .info-section .info-item:first-child {
   grid-column: 1 / 2;
   /* 佔據第 1 欄 */
@@ -5693,7 +5750,7 @@ section.facility {
 
 .prolotherapy article h3 {
   font-size: 1.75rem;
-  margin-bottom: 32px;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 480px) {
@@ -5772,19 +5829,37 @@ section.facility {
 }
 
 .prolotherapy article .therapy-type ul li h3 {
-  border-bottom: 3px solid var(--lightGreen);
+  border-bottom: 3px solid var(--orange);
   width: fit-content;
   padding-bottom: 4px;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
   .prolotherapy article .therapy-type ul li h3 {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
+}
+
+.prolotherapy article .therapy-type ul li h3:first-of-type {
+  border-bottom: 3px solid var(--lightGreen);
 }
 
 .prolotherapy article .therapy-type ul li .description {
   height: 100%;
+}
+
+.prolotherapy article .therapy-type ul .l-desc {
+  display: block;
+  border: unset;
+  padding-left: 1.5rem;
+}
+
+.prolotherapy article .therapy-type ul .l-desc li {
+  display: list-item;
+  list-style: number;
+  padding: unset;
+  border: unset;
 }
 
 .prolotherapy article .symptom {
@@ -6126,7 +6201,7 @@ section.facility {
 
 .smarc article h3 {
   font-size: 1.75rem;
-  margin-bottom: 32px;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 480px) {

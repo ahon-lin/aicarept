@@ -1,6 +1,7 @@
 //首頁 team section
 
-.team {
+.team,
+.q-section {
   position: relative;
   // background: url("/image/bg/doctor-bg.png") no-repeat center center transparent;
   // background-size: cover;
@@ -28,7 +29,7 @@
       padding: 0 25px;
     }
 
-    & > h1 {
+    & > h2 {
       position: relative;
       color: var(--black);
       margin-bottom: 32px;
@@ -101,7 +102,38 @@
   & > img {
     margin-top: 120px;
     @include for-largepad {
-      margin-top: 120px;
+      margin-top: 10rem;
     }
+  }
+}
+
+.q-section {
+  padding: 5rem 1rem;
+  background-image: url("../../image/bg/doctor-bg.png");
+  background-position: top; /* 置中 */
+  background-repeat: no-repeat;
+  article {
+    position: relative;
+  }
+  .image-vs-bg {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+    /* 設定背景圖 */
+    background-image: url("../../image/bg/website-treat-pt4.webp");
+    background-size: cover; /* 填滿容器 */
+    background-position: center; /* 置中 */
+    background-repeat: no-repeat;
+
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  p {
+    margin: 1rem 0;
+    max-width: 35rem;
   }
 }

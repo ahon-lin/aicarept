@@ -67,7 +67,7 @@
     }
     h3 {
       font-size: 1.75rem;
-      margin-bottom: 32px;
+      margin-bottom: 1.5rem;
       @include for-phone {
         margin-bottom: 16px;
         font-size: 1.5rem;
@@ -100,16 +100,32 @@
             border-right: none;
             text-align: left;
           }
+
           h3 {
-            border-bottom: 3px solid var(--lightGreen);
+            border-bottom: 3px solid var(--orange);
             width: fit-content;
             padding-bottom: 4px;
+            margin-bottom: 1rem;
             @include for-pad {
-              margin-bottom: 8px;
+              margin-bottom: 0.5rem;
+            }
+            &:first-of-type {
+              border-bottom: 3px solid var(--lightGreen);
             }
           }
           .description {
             height: 100%;
+          }
+        }
+        .l-desc {
+          display: block;
+          border: unset;
+          padding-left: 1.5rem;
+          li {
+            display: list-item;
+            list-style: number;
+            padding: unset;
+            border: unset;
           }
         }
       }
@@ -274,7 +290,7 @@
     }
     h3 {
       font-size: 1.75rem;
-      margin-bottom: 32px;
+      margin-bottom: 1.5rem;
       @include for-phone {
         margin-bottom: 16px;
         font-size: 1.5rem;

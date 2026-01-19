@@ -263,6 +263,10 @@ ul.location {
             padding: 0.5rem;
             font-weight: 500;
             margin-bottom: 1rem;
+
+            &.m-top {
+              margin-top: 2rem;
+            }
           }
           &:first-child {
             grid-column: 1 / 2; /* 佔據第 1 欄 */
