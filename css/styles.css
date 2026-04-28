@@ -4169,7 +4169,8 @@ a.yo-link:hover {
   justify-content: start;
 }
 
-.content-list.qa p {
+.content-list.qa p,
+.content-list.qa .qa-list {
   padding: 16px;
   background-color: var(--tertiary-container);
   border-radius: 2px;
@@ -4178,12 +4179,21 @@ a.yo-link:hover {
 }
 
 @media (max-width: 480px) {
-  .content-list.qa p {
+  .content-list.qa p,
+  .content-list.qa .qa-list {
     padding: 8px;
     margin-left: unset;
     font-size: 0.875rem;
     line-height: 1.5;
   }
+}
+
+.content-list.qa .qa-list {
+  margin-bottom: unset;
+}
+
+.content-list.qa .qa-list p {
+  margin-left: unset;
 }
 
 .content-list.item {

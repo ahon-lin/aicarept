@@ -450,7 +450,8 @@ a.yo-link {
       font-weight: 500;
       @include flexbox(row, center, start);
     }
-    p {
+    p,
+    .qa-list {
       padding: 16px;
       background-color: var(--tertiary-container);
       border-radius: 2px;
@@ -461,6 +462,12 @@ a.yo-link {
         margin-left: unset;
         font-size: 0.875rem;
         line-height: 1.5;
+      }
+    }
+    .qa-list {
+      margin-bottom: unset;
+      p {
+        margin-left: unset;
       }
     }
   }
