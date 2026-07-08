@@ -101,6 +101,16 @@
         }
       }
     }
+    &.ila {
+      input[type="radio"] {
+        @include s-tabs(1.125rem, "#form-tab-ila", ".panel-ila", "#panel-ila");
+      }
+      @include for-phone {
+        input[type="radio"] + label {
+          width: 28%;
+        }
+      }
+    }
     &.tyn {
       input[type="radio"] {
         @include s-tabs(1.125rem, "#form-tab-tyn", ".panel-tyn", "#panel-tyn");

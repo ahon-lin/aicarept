@@ -7420,6 +7420,419 @@ section.facility {
   }
 }
 
+.team-member .team-panel.ila input[type="radio"] {
+  display: none;
+}
+
+.team-member .team-panel.ila input[type="radio"]:checked + label {
+  border-color: var(--orange);
+  color: var(--black);
+}
+
+.team-member .team-panel.ila input[type="radio"] + label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  width: 200px;
+  color: var(--fontColor);
+  cursor: pointer;
+  font-size: 1.125rem;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 16px 4px;
+  border-radius: 100px;
+  border: 2px solid var(--lightGrayf3);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.ila input[type="radio"] + label {
+    font-size: 1rem;
+  }
+}
+
+.team-member .team-panel.ila input[type="radio"] + label:hover {
+  border-color: var(--orange);
+  color: var(--black);
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila1:checked ~ .panel-ila #panel-ila-1 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila2:checked ~ .panel-ila #panel-ila-2 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila3:checked ~ .panel-ila #panel-ila-3 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila4:checked ~ .panel-ila #panel-ila-4 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila5:checked ~ .panel-ila #panel-ila-5 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila6:checked ~ .panel-ila #panel-ila-6 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila7:checked ~ .panel-ila #panel-ila-7 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila8:checked ~ .panel-ila #panel-ila-8 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila9:checked ~ .panel-ila #panel-ila-9 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila10:checked ~ .panel-ila #panel-ila-10 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila11:checked ~ .panel-ila #panel-ila-11 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila12:checked ~ .panel-ila #panel-ila-12 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila13:checked ~ .panel-ila #panel-ila-13 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila14:checked ~ .panel-ila #panel-ila-14 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila15:checked ~ .panel-ila #panel-ila-15 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila16:checked ~ .panel-ila #panel-ila-16 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila17:checked ~ .panel-ila #panel-ila-17 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila18:checked ~ .panel-ila #panel-ila-18 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila19:checked ~ .panel-ila #panel-ila-19 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila20:checked ~ .panel-ila #panel-ila-20 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila21:checked ~ .panel-ila #panel-ila-21 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila22:checked ~ .panel-ila #panel-ila-22 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila23:checked ~ .panel-ila #panel-ila-23 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila24:checked ~ .panel-ila #panel-ila-24 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila25:checked ~ .panel-ila #panel-ila-25 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila26:checked ~ .panel-ila #panel-ila-26 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila27:checked ~ .panel-ila #panel-ila-27 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila28:checked ~ .panel-ila #panel-ila-28 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila29:checked ~ .panel-ila #panel-ila-29 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila30:checked ~ .panel-ila #panel-ila-30 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila31:checked ~ .panel-ila #panel-ila-31 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila32:checked ~ .panel-ila #panel-ila-32 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila33:checked ~ .panel-ila #panel-ila-33 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila34:checked ~ .panel-ila #panel-ila-34 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila35:checked ~ .panel-ila #panel-ila-35 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila36:checked ~ .panel-ila #panel-ila-36 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila37:checked ~ .panel-ila #panel-ila-37 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila38:checked ~ .panel-ila #panel-ila-38 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila39:checked ~ .panel-ila #panel-ila-39 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila40:checked ~ .panel-ila #panel-ila-40 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila41:checked ~ .panel-ila #panel-ila-41 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila42:checked ~ .panel-ila #panel-ila-42 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila43:checked ~ .panel-ila #panel-ila-43 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila44:checked ~ .panel-ila #panel-ila-44 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila45:checked ~ .panel-ila #panel-ila-45 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila46:checked ~ .panel-ila #panel-ila-46 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila47:checked ~ .panel-ila #panel-ila-47 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila48:checked ~ .panel-ila #panel-ila-48 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila49:checked ~ .panel-ila #panel-ila-49 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member .team-panel.ila input[type="radio"]#form-tab-ila50:checked ~ .panel-ila #panel-ila-50 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 480px) {
+  .team-member .team-panel.ila input[type="radio"] + label {
+    width: 28%;
+  }
+}
+
 .team-member .team-panel.tyn input[type="radio"] {
   display: none;
 }
