@@ -39,6 +39,8 @@
       z-index: 1;
       border-top: 2px solid var(--orange);
       margin-top: 2px;
+      max-height: 85vh;
+      overflow-y: auto;
     }
     &:hover .dropdown-content {
       @include flexbox(column, start, start);

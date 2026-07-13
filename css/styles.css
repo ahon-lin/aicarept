@@ -820,6 +820,8 @@ hr {
   z-index: 1;
   border-top: 2px solid var(--orange);
   margin-top: 2px;
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .header .dropdown:hover .dropdown-content {
@@ -3654,6 +3656,10 @@ hr {
   color: var(--fontColor);
 }
 
+.articleContainer p > mark {
+  background-color: var(--lightGreen);
+}
+
 @media (max-width: 480px) {
   .articleContainer p {
     font-size: 1.125rem;
@@ -4361,6 +4367,10 @@ a.yo-link:hover {
   margin-left: 1.5rem;
   padding: 0.5rem 0;
   color: var(--tag);
+}
+
+.content-list.video .vinfo-container .img-container {
+  margin-bottom: 0;
 }
 
 .content-list.sub-list {
