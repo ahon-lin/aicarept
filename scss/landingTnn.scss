@@ -22,11 +22,7 @@
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-body.landing-tnn {
-  color: var(--ink);
-  background: var(--paper);
-  overflow-x: hidden;
-
+.landing-tnn {
   .mono {
     font-family: "IBM Plex Mono", monospace;
   }
