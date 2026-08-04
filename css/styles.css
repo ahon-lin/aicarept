@@ -822,6 +822,18 @@ hr {
   margin-top: 2px;
 }
 
+.header .dropdown .dropdown-content.max-h {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 480px) {
+  .header .dropdown .dropdown-content.max-h {
+    max-height: unset;
+    overflow-y: unset;
+  }
+}
+
 .header .dropdown:hover .dropdown-content {
   display: -webkit-flex;
   display: -moz-flex;
@@ -3600,6 +3612,7 @@ hr {
   /* 讓邊框線合併 */
   border: 1px solid var(--border);
   color: var(--fontColor);
+  table-layout: fixed;
   /* 儲存格（<th> 和 <td>）的通用樣式 */
   /* 表頭樣式 */
   /* 第一欄「特徵」的標籤文字樣式 */
@@ -3808,6 +3821,25 @@ hr {
 
 .articleContainer hr {
   margin-bottom: 2rem;
+}
+
+.articleContainer .info-container {
+  border: 1px solid var(--lightGreen);
+  background-color: var(--surface-container);
+  padding: 16px;
+  border-radius: 5px;
+  margin: 0 40px;
+}
+
+.articleContainer .info-container .title {
+  border-left: 4px solid var(--lightGreen);
+  padding-left: 8px;
+  margin-bottom: 12px;
+}
+
+.articleContainer .info-container p {
+  padding: unset;
+  font-size: 0.875rem;
 }
 
 .share {
@@ -4107,8 +4139,14 @@ a.yo-link:hover {
   list-style: none;
 }
 
+.content-list li.ls-none h3 {
+  margin: unset;
+  border: unset;
+  font-size: 1.125rem;
+}
+
 .content-list li .qt {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-right: 8px;
   color: var(--orange);
 }

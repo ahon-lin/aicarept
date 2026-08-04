@@ -99,6 +99,7 @@
       border-collapse: collapse; /* 讓邊框線合併 */
       border: 1px solid var(--border);
       color: var(--fontColor);
+      table-layout: fixed;
 
       /* 儲存格（<th> 和 <td>）的通用樣式 */
       .table-cell {
@@ -220,6 +221,22 @@
 
   hr {
     margin-bottom: 2rem;
+  }
+  .info-container {
+    border: 1px solid var(--lightGreen);
+    background-color: var(--surface-container);
+    padding: 16px;
+    border-radius: 5px;
+    margin: 0 40px;
+    .title {
+      border-left: 4px solid var(--lightGreen);
+      padding-left: 8px;
+      margin-bottom: 12px;
+    }
+    p {
+      padding: unset;
+      font-size: 0.875rem;
+    }
   }
 }
 .share {
@@ -409,11 +426,16 @@ a.yo-link {
     list-style-type: disc;
     &.ls-none {
       list-style: none;
+      h3 {
+        margin: unset;
+        border: unset;
+        font-size: 1.125rem;
+      }
     }
 
     // question title
     .qt {
-      font-size: 2.5rem;
+      font-size: 2rem;
       padding-right: 8px;
       color: var(--orange);
       @include for-phone {

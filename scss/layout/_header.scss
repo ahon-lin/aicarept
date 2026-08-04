@@ -39,6 +39,14 @@
       z-index: 1;
       border-top: 2px solid var(--orange);
       margin-top: 2px;
+      &.max-h {
+        max-height: 85vh;
+        overflow-y: auto;
+        @include for-phone {
+          max-height: unset;
+          overflow-y: unset;
+        }
+      }
     }
     &:hover .dropdown-content {
       @include flexbox(column, start, start);
