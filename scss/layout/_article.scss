@@ -144,7 +144,7 @@
       padding: 16px 0;
       font-weight: 400;
       font-size: 1rem;
-      color: var(--fontColor);
+      color: var(--tag);
     }
     & > mark {
       background-color: var(--lightGreen);
@@ -196,6 +196,11 @@
           padding: 0;
           padding-top: 8px;
           font-size: 1.125rem;
+        }
+        .content-list {
+          margin-bottom: unset;
+          margin-top: 8px;
+          width: 100%;
         }
       }
     }
@@ -615,7 +620,7 @@ a.yo-link {
     }
     &.col-1 {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      // grid-template-rows: repeat(3, 1fr);
       background-color: var(--border);
       gap: 1px;
       li {
