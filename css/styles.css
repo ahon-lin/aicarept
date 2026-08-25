@@ -3449,6 +3449,7 @@ hr {
   max-height: 50vh;
   object-fit: cover;
   margin-top: 64px;
+  margin-bottom: 24px;
 }
 
 .articleContainer {
@@ -3491,22 +3492,24 @@ hr {
 .articleContainer h1 {
   position: relative;
   color: var(--black);
-  margin: 40px 0;
+  margin: 16px 0 64px 0;
   padding: 0 16px;
   letter-spacing: 1px;
+  font-size: 1.875rem;
+  line-height: 125%;
 }
 
 @media (max-width: 768px) {
   .articleContainer h1 {
-    margin: 40px 20px;
+    margin: 8px 8px 24px 8px;
     margin-bottom: 24px;
     text-align: justify;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .articleContainer h1 {
-    margin: 24px 8px;
     padding: 0 8px;
   }
 }
@@ -3517,7 +3520,7 @@ hr {
   background: var(--lightGreen);
   width: 100%;
   height: 5px;
-  bottom: -10px;
+  bottom: -16px;
   left: 0;
 }
 
@@ -3528,7 +3531,8 @@ hr {
 
 @media (max-width: 480px) {
   .articleContainer h3 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
+    margin: 1.5rem 0 0.5rem 0;
   }
 }
 
@@ -3641,14 +3645,35 @@ hr {
   line-height: 2.5rem;
   width: 100%;
   letter-spacing: 1.15px;
-  margin: 48px 0 24px 0;
-  padding-bottom: 8px;
+  margin: 120px 0px 24px;
+  position: relative;
+}
+
+.articleContainer h2:before {
+  content: "";
+  position: absolute;
+  background: var(--orange);
+  width: 12px;
+  height: 12px;
+  top: 15px;
+  left: -24px;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .articleContainer h2:before {
+    width: 8px;
+    height: 8px;
+    top: 12px;
+    left: -14px;
+  }
 }
 
 @media (max-width: 480px) {
   .articleContainer h2 {
     font-size: 1.5rem;
     margin: 24px 0 8px 0;
+    line-height: 125%;
   }
 }
 
@@ -3657,7 +3682,7 @@ hr {
   font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: 1.15px;
-  padding-bottom: 24px;
+  padding: 16px 0;
 }
 
 .articleContainer p.note {
@@ -3825,6 +3850,12 @@ hr {
   padding-top: 120px;
 }
 
+@media (max-width: 768px) {
+  .articleContainer.treatment {
+    padding-top: 80px;
+  }
+}
+
 .articleContainer hr {
   margin-bottom: 2rem;
 }
@@ -3834,7 +3865,7 @@ hr {
   background-color: var(--surface-container);
   padding: 16px;
   border-radius: 5px;
-  margin: 0 40px;
+  margin: 16px 40px;
 }
 
 .articleContainer .info-container .title {
