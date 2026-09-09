@@ -3617,6 +3617,7 @@ hr {
   border: 1px solid var(--border);
   color: var(--fontColor);
   table-layout: fixed;
+  margin: 24px 0 48px 0;
   /* 儲存格（<th> 和 <td>）的通用樣式 */
   /* 表頭樣式 */
   /* 第一欄「特徵」的標籤文字樣式 */
@@ -3826,6 +3827,14 @@ hr {
   width: 100%;
 }
 
+.articleContainer .aicare-treatment ol li .img-container {
+  margin-bottom: unset;
+}
+
+.articleContainer .aicare-treatment ol li .img-container img {
+  max-width: 80%;
+}
+
 .articleContainer .aicare-treatment .yt-container {
   margin-top: 16px;
 }
@@ -3877,6 +3886,27 @@ hr {
 .articleContainer .info-container p {
   padding: unset;
   font-size: 0.875rem;
+}
+
+.articleContainer .info-container .action-container {
+  margin-top: 16px;
+}
+
+.articleContainer .info-container .action-container button {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+.articleContainer .info-container.reserve {
+  border: 2px dashed var(--orange);
+  padding: 24px;
+}
+
+.articleContainer .info-container.reserve p {
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .share {
