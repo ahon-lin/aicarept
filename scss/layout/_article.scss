@@ -104,6 +104,7 @@
       border: 1px solid var(--border);
       color: var(--fontColor);
       table-layout: fixed;
+      margin: 24px 0 48px 0;
 
       /* 儲存格（<th> 和 <td>）的通用樣式 */
       .table-cell {
@@ -224,6 +225,12 @@
           margin-top: 8px;
           width: 100%;
         }
+        .img-container {
+          margin-bottom: unset;
+          img {
+            max-width: 80%;
+          }
+        }
       }
     }
 
@@ -266,6 +273,23 @@
     p {
       padding: unset;
       font-size: 0.875rem;
+    }
+    .action-container {
+      margin-top: 16px;
+      button {
+        background-color: var(--orange);
+        color: var(--white);
+        padding: 8px 16px;
+        border-radius: 50px;
+      }
+    }
+    &.reserve {
+      border: 2px dashed var(--orange);
+      padding: 24px;
+      p {
+        font-size: 1.125rem;
+        font-weight: 400;
+      }
     }
   }
 }

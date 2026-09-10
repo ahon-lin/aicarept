@@ -51,6 +51,7 @@
     <!-- 標題＋Nav -->
     <header class="header header-fixed" id="header"></header>
     <div class="landing-tnn">
+      
     <!-- Hero 主視覺：hero-tainan.jpg／.webp（生生優動治療師儀器治療實拍，1920×1200）。左側漸層遮罩由 .hero::before 保白字可讀 -->
     <section class="hero">
       <div class="wrap">
@@ -69,8 +70,104 @@
       </div>
     </section>
 
-    <section class="solution" id="solution">
+    <!-- ═══ 分院資訊（示意）：緊湊雙欄，兩館同時秀，資料取自官網 location 頁。上線可接現成模組 ═══ -->
+    <section class="branches" id="branches">
       <div class="wrap">
+        <div
+          class="section-head" data-aos="fade-up"
+          style="max-width: none; text-align: center; margin-bottom: 34px"
+        >
+          <div class="eyebrow-line" style="justify-content: center">
+            分院資訊
+          </div>
+          <h2>台南兩館，就近預約</h2>
+        </div>
+        <div class="branch-cards " data-aos="fade-up">
+          <div class="bc-card">
+            <div class="bc-name">西門分院 <span>物理治療所</span></div>
+            <div class="bc-addr">
+              台南市中西區永福路一段185號國泰健檢中心4樓<span class="bc-land"
+                >（近新光三越西門新天地）</span
+              >
+            </div>
+            <div class="bc-row">
+              <b>電話</b><a href="tel:+886-6-6020607">06-6020-607</a>
+            </div>
+            <div class="bc-row">
+              <b>門診</b>09:00–12:30／13:30–17:00／18:00–21:30
+            </div>
+            <div class="bc-row"><b>交通</b>近新光三越・多線公車・特約停車</div>
+            <a
+              href="https://maps.app.goo.gl/ytCehPyKK8p9QpCQ6"
+              target="_blank"
+              class="bc-nav"
+              >導航前往 →</a
+            >
+          </div>
+          <div class="bc-card">
+            <div class="bc-name">海安分院 <span>物理治療所</span></div>
+            <div class="bc-addr">
+              台南市北區北成路273號<span class="bc-land">（順天羽球館旁）</span>
+            </div>
+            <div class="bc-row">
+              <b>電話</b><a href="tel:+886-6-6020533">06-6020-533</a>
+            </div>
+            <div class="bc-row">
+              <b>門診</b>09:00–12:30／13:30–17:00／18:00–21:30
+            </div>
+            <div class="bc-row">
+              <b>交通</b>順天羽球館旁・多線公車・鄰近停車場
+            </div>
+            <a
+              href="https://maps.app.goo.gl/Jc6nJaqb9eDv1qht9"
+              target="_blank"
+              class="bc-nav"
+              >導航前往 →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 專業團隊（真互動）：切換西門／海安分院、點頭像換人。
+     資料取自官網 team 頁（aicarept.com/info/team），套 LP 配色。roster 與 feature 由下方 JS 依 TEAM 資料渲染 ═══ -->
+     <section class="team-pro" id="team">
+      <div class="wrap">
+        <div class="team-title " data-aos="fade-up"><h2>專業團隊</h2></div>
+
+        <div class="city-tabs " data-aos="fade-up"><div class="city-tab">台南</div></div>
+
+        <div class="branch-toggle " data-aos="fade-up" id="teamToggle">
+          <button
+            class="bt-pill active"
+            data-branch="ximen"
+            data-label="西門分院"
+          >
+            西門分院
+          </button>
+          <button class="bt-pill" data-branch="haian" data-label="海安分院">
+            海安分院
+          </button>
+        </div>
+
+        <div class="team-roster " data-aos="fade-up" id="teamRoster"></div>
+        <div class="team-feature " data-aos="fade-up" id="teamFeature"></div>
+      </div>
+    </section>
+    <div class="wrap">
+      <div class="mid-cta" data-aos="fade-up">
+        <div>
+          <h3>現在就開始，找回不痛的生活。</h3>
+          <p>專業評估 × 量身治療計畫，我們陪你一步步改善。</p>
+        </div>
+        <a href="#booking" class="btn btn-primary">立即預約 →</a>
+      </div>
+    </div>
+    <section class="solution" id="solution">
+      
+      <div class="wrap">
+        
+        
         <div class="section-head " data-aos="fade-up">
           <div class="eyebrow-line">黃金三角療法</div>
           <h2>不只是止痛，找出根源問題，對症改善</h2>
@@ -199,41 +296,11 @@
           </div>
         </div>
 
-        <div class="mid-cta " data-aos="fade-up">
-          <div>
-            <h3>現在就開始，找回不痛的生活。</h3>
-            <p>專業評估 × 量身治療計畫，我們陪你一步步改善。</p>
-          </div>
-          <a href="#booking" class="btn btn-primary">立即預約 →</a>
-        </div>
+        
       </div>
     </section>
 
-    <!-- ═══ 專業團隊（真互動）：切換西門／海安分院、點頭像換人。
-     資料取自官網 team 頁（aicarept.com/info/team），套 LP 配色。roster 與 feature 由下方 JS 依 TEAM 資料渲染 ═══ -->
-    <section class="team-pro" id="team">
-      <div class="wrap">
-        <div class="team-title " data-aos="fade-up"><h2>專業團隊</h2></div>
-
-        <div class="city-tabs " data-aos="fade-up"><div class="city-tab">台南</div></div>
-
-        <div class="branch-toggle " data-aos="fade-up" id="teamToggle">
-          <button
-            class="bt-pill active"
-            data-branch="ximen"
-            data-label="西門分院"
-          >
-            西門分院
-          </button>
-          <button class="bt-pill" data-branch="haian" data-label="海安分院">
-            海安分院
-          </button>
-        </div>
-
-        <div class="team-roster " data-aos="fade-up" id="teamRoster"></div>
-        <div class="team-feature " data-aos="fade-up" id="teamFeature"></div>
-      </div>
-    </section>
+    
 
     <section class="reviews" id="reviews">
       <div class="wrap">
@@ -373,64 +440,7 @@
       </div>
     </section>
 
-    <!-- ═══ 分院資訊（示意）：緊湊雙欄，兩館同時秀，資料取自官網 location 頁。上線可接現成模組 ═══ -->
-    <section class="branches" id="branches">
-      <div class="wrap">
-        <div
-          class="section-head" data-aos="fade-up"
-          style="max-width: none; text-align: center; margin-bottom: 34px"
-        >
-          <div class="eyebrow-line" style="justify-content: center">
-            分院資訊
-          </div>
-          <h2>台南兩館，就近預約</h2>
-        </div>
-        <div class="branch-cards " data-aos="fade-up">
-          <div class="bc-card">
-            <div class="bc-name">西門分院 <span>物理治療所</span></div>
-            <div class="bc-addr">
-              台南市中西區永福路一段185號國泰健檢中心4樓<span class="bc-land"
-                >（近新光三越西門新天地）</span
-              >
-            </div>
-            <div class="bc-row">
-              <b>電話</b><a href="tel:+886-6-6020607">06-6020-607</a>
-            </div>
-            <div class="bc-row">
-              <b>門診</b>09:00–12:30／13:30–17:00／18:00–21:30
-            </div>
-            <div class="bc-row"><b>交通</b>近新光三越・多線公車・特約停車</div>
-            <a
-              href="https://maps.app.goo.gl/ytCehPyKK8p9QpCQ6"
-              target="_blank"
-              class="bc-nav"
-              >導航前往 →</a
-            >
-          </div>
-          <div class="bc-card">
-            <div class="bc-name">海安分院 <span>物理治療所</span></div>
-            <div class="bc-addr">
-              台南市北區北成路273號<span class="bc-land">（順天羽球館旁）</span>
-            </div>
-            <div class="bc-row">
-              <b>電話</b><a href="tel:+886-6-6020533">06-6020-533</a>
-            </div>
-            <div class="bc-row">
-              <b>門診</b>09:00–12:30／13:30–17:00／18:00–21:30
-            </div>
-            <div class="bc-row">
-              <b>交通</b>順天羽球館旁・多線公車・鄰近停車場
-            </div>
-            <a
-              href="https://maps.app.goo.gl/Jc6nJaqb9eDv1qht9"
-              target="_blank"
-              class="bc-nav"
-              >導航前往 →</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="offer" id="offer">
       <div class="wrap">
