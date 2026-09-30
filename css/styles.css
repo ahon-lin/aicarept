@@ -96,7 +96,7 @@ abbr[title] {
  */
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 /**
@@ -4361,6 +4361,14 @@ a.yo-link:hover {
   place-items: unset;
   gap: 24px;
   border-bottom: 1px dashed var(--border);
+}
+
+.content-list.reason li.col-1 {
+  grid-template-columns: 1fr;
+}
+
+.content-list.reason li.col-1 h4 {
+  border: unset;
 }
 
 @media (max-width: 991px) {
