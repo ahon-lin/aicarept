@@ -1,21 +1,19 @@
-// 預約表單個資與注意事項
-// $(".terms").click(function(){
-//     $(".popup").addClass('popup-open');
-//     console.log("開啟");
-// });
-// $(".terms-popup").find('.close-btn').click(function(){
-//     $(".popup").removeClass('popup-open');
-//     console.log("關閉");
-// });
+$(document).ready(function () {
+  // 開啟 Popup
+  $(document).on("click", ".terms", function () {
+    var popupId = $(this).data("popup");
 
-$(document).ready(function() {
-    $('.terms').click(function() {
-      $('.popup').css('display', 'flex');
-    });
-  
-    $('.close-btn').click(function() {
-      $('.popup').css('display', 'none');
-    });
-    var observer = lozad('.lozad')
-    observer.observe()
+    $("#" + popupId)
+      .closest(".popup")
+      .css("display", "flex");
   });
+
+  // 關閉 Popup
+  $(document).on("click", ".close-btn", function () {
+    $(this).closest(".popup").css("display", "none");
+  });
+
+  var observer = lozad(".lozad");
+
+  observer.observe();
+});

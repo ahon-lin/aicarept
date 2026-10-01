@@ -2899,6 +2899,7 @@ hr {
     grid-template-rows: auto;
     place-items: unset;
     gap: 8px;
+    row-gap: 32px;
     padding: 0 24px;
     width: 100%;
     margin-bottom: 24px;
@@ -4510,6 +4511,64 @@ a.yo-link:hover {
 .content-list.sub-list li h4 {
   padding-right: unset;
   border: unset;
+}
+
+.personal-info {
+  max-width: 900px;
+  margin: 120px auto;
+  color: var(--fontColor);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.personal-info h1 {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.personal-info h2 {
+  margin: 40px 0 16px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.personal-info h2::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  left: -24px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.personal-info p {
+  margin: 0 0 16px;
+}
+
+.personal-info > ol {
+  padding-left: 28px;
+}
+
+.personal-info > ol > li {
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.personal-info ul {
+  margin: 12px 0 20px;
+  padding-left: 24px;
+}
+
+.personal-info li {
+  margin-bottom: 12px;
+}
+
+.personal-info strong {
+  font-weight: 700;
 }
 
 .locationContainer {

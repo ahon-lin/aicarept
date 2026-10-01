@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -333,7 +333,13 @@
                 src="https://www.youtube.com/embed/l9On4eAG6Vc?si=At5bZ4f-xjr1IkpN"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -354,7 +360,13 @@
                 src="https://www.youtube.com/embed/WAQ9ONQumXw?si=eBEm40CMW2HV4V8G"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -383,7 +395,13 @@
                 src="https://www.youtube.com/embed/7Sm5IrGQWT8?si=JlwO6qA17yLdfuw9"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -411,7 +429,13 @@
                 src="https://www.youtube.com/embed/CpZehcgcaOk?si=jrb4PsLexqSESt_E"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -498,7 +522,6 @@
     <button class="line-fixed" id="line-fixed"></button>
     <button class="messenger-fixed" id="messenger-fixed"></button>
     <button class="phone-fixed" id="phone-fixed"></button>
-    <div class="popup" id="terms-popup"></div>
   </body>
   <!-- 引用 jquery 3.6.1 -->
   <script src="/js/jquery-3.6.4.min.js"></script>
@@ -528,17 +551,18 @@
   </script>
   <!-- swiper 載入共同頁面  -->
   <script src="/js/loading.js"></script>
+  <script src="/js/popup.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       var windowlocation = location.href;
-      $(".shareLine").attr(
+      ($(".shareLine").attr(
         "href",
-        "https://social-plugins.line.me/lineit/share?url=" + windowlocation
+        "https://social-plugins.line.me/lineit/share?url=" + windowlocation,
       ),
         $(".shareFacebook").attr(
           "href",
-          "http://www.facebook.com/share.php?u=" + windowlocation
-        );
+          "http://www.facebook.com/share.php?u=" + windowlocation,
+        ));
     });
   </script>
 </html>
