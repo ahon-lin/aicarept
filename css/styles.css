@@ -3618,7 +3618,7 @@ hr {
   border: 1px solid var(--border);
   color: var(--fontColor);
   table-layout: fixed;
-  margin: 24px 0 48px 0;
+  margin: 24px 0 0 0;
   /* 儲存格（<th> 和 <td>）的通用樣式 */
   /* 表頭樣式 */
   /* 第一欄「特徵」的標籤文字樣式 */
