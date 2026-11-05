@@ -35,7 +35,7 @@
             type="text"
             id="phone"
             max="10"
-            onkeyup="this.value=this.value.replace(/[^0-9+]+/,'')"
+            onkeyup="this.value = this.value.replace(/[^0-9+]+/, '')"
             pattern="\d*"
             required
             placeholder="請輸入手機號碼"
@@ -139,10 +139,21 @@
           <input type="text" id="recommend" placeholder="非必填" />
         </div>
         <div class="aicare-checkbox agree">
-          <input type="checkbox" id="agree" />
-          <label for="agree"
+          <input type="checkbox" id="agree-project" />
+          <label for="agree-project"
+            >我已了解
+            <span class="terms" data-popup="popup-project"
+              >我已了解首次諮詢專案價及注意事項</span
+            >
+          </label>
+        </div>
+        <div class="aicare-checkbox agree">
+          <input type="checkbox" id="agree-personal-info" />
+          <label for="agree-personal-info"
             >我已同意
-            <span class="terms">首次諮詢專案價、注意事項及個資告知事項</span>
+            <span class="terms" data-popup="popup-personal-info"
+              >個人資料蒐集、處理及利用告知暨同意書</span
+            >
           </label>
         </div>
 
@@ -177,6 +188,9 @@
     </nav>
     <nav>
       <a href="/blog.html">疼痛小百科</a>
+    </nav>
+    <nav>
+      <a href="/personal-terms.html">個資蒐集告知聲明</a>
     </nav>
   </section>
   <section class="contact">

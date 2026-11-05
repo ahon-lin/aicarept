@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -73,7 +73,13 @@
             height="225"
             src="https://www.youtube.com/embed/6lNoYx65h3o?si=pGa32IM-zL1KYwWb"
             frameborder="0"
-            allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+            allow="
+              accelerometer;
+              autoplay;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
             referrerpolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
@@ -197,7 +203,13 @@
                   height="225"
                   src="https://www.youtube.com/embed/Q0f0UNU3sYs"
                   frameborder="0"
-                  allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
                   referrerpolicy="strict-origin-when-cross-origin"
                 ></iframe>
               </div>
@@ -214,7 +226,13 @@
                   height="225"
                   src="https://www.youtube.com/embed/JNUl2apQ1OM"
                   frameborder="0"
-                  allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
                   referrerpolicy="strict-origin-when-cross-origin"
                 ></iframe>
               </div>
@@ -245,7 +263,13 @@
                 src="https://www.youtube.com/embed/vXpAdnij4sg?si=ad1xODbQvzSCU0z4"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -267,7 +291,13 @@
                 src="https://www.youtube.com/embed/Uf7GTgr4b_A?si=Ryhwi2kIIi8ZdwQd"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -289,7 +319,13 @@
                 src="https://www.youtube.com/embed/Ytkw8mA8jyA?si=USgqjwjGgL8znu3I"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
@@ -319,7 +355,13 @@
             height="225"
             src="https://www.youtube.com/embed/dBrJggNpVjc?si=gq8RRsbeApvihJht"
             frameborder="0"
-            allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture;"
+            allow="
+              accelerometer;
+              autoplay;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
             referrerpolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
@@ -402,7 +444,6 @@
     <button class="line-fixed" id="line-fixed"></button>
     <button class="messenger-fixed" id="messenger-fixed"></button>
     <button class="phone-fixed" id="phone-fixed"></button>
-    <div class="popup" id="terms-popup"></div>
   </body>
   <!-- 引用 jquery 3.6.1 -->
   <script src="/js/jquery-3.6.4.min.js"></script>
@@ -432,17 +473,18 @@
   </script>
   <!-- swiper 載入共同頁面  -->
   <script src="/js/loading.js"></script>
+  <script src="/js/popup.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       var windowlocation = location.href;
-      $(".shareLine").attr(
+      ($(".shareLine").attr(
         "href",
-        "https://social-plugins.line.me/lineit/share?url=" + windowlocation
+        "https://social-plugins.line.me/lineit/share?url=" + windowlocation,
       ),
         $(".shareFacebook").attr(
           "href",
-          "http://www.facebook.com/share.php?u=" + windowlocation
-        );
+          "http://www.facebook.com/share.php?u=" + windowlocation,
+        ));
     });
   </script>
 </html>
